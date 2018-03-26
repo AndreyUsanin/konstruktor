@@ -1,0 +1,72 @@
+
+
+.tabs-wrp {
+      position: relative;
+}
+
+.h-tabs {
+      @include tabs-container;
+      display: flex;
+      justify-content: center;
+      border: 0;
+      padding-top: 1em;
+}
+
+
+.h-tabs__content {
+      @include tabs-content;
+      border: 0;
+}
+
+.h-tabs__panel {
+      @include tabs-panel;
+}
+
+.h-tabs__title > a {
+      border-radius:  100px;
+      background: $primary-color;
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+}
+
+
+.h-tabs__title > a:focus, .h-tabs__title > a:hover, .h-tabs__title > a[aria-selected="true"] {
+            background: $primary-color;
+            outline: 0;
+}
+
+.h-tabs__title > a[aria-selected="true"] {
+            background: $secondary-color;
+}
+
+.h-tabs__icon {
+      font-size: 2em;
+      color: $white;
+}
+
+
+
+      .h-tabs__info {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 50%;
+            padding: 2em;
+            z-index: -1;
+            text-align: center;
+
+             @include breakpoint(medium down) {
+            position: static;
+            width: 100%;
+             }
+      }
+
+
+.h-tabs__img {
+      width: 100%;
+}

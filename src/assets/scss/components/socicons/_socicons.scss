@@ -1,0 +1,29 @@
+.socicon {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      &__item {
+            list-style: none;
+
+            display: flex;
+            margin: 0 15px 0 0;
+            border: 1px solid $black;
+            border-radius: 100px;
+      }
+
+      &__link {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            padding: 1em;
+            align-items: center;
+            justify-content: center;
+      }
+
+      &__icon {
+            font-size: 1.2em;
+            color: $black;
+      }
+}

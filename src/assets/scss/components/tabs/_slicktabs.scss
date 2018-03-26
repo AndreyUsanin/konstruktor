@@ -1,0 +1,68 @@
+.tabbox {
+      text-align: center;
+
+      &__title {
+            font-size: 0.8em;
+            text-transform: uppercase;
+      }
+
+}
+
+.slick-slider {
+      margin: 0;
+}
+
+.slider-nav {
+      margin: 2em 0;
+      border-bottom: 1px solid $medium-gray;
+}
+
+.slider-nav .slick-slide {
+      margin-right: 15px;
+      padding: 2em 1em;
+      cursor: pointer;
+
+      &:hover .icon {
+            color: $primary-color;
+      }
+
+}
+
+.slider-nav {
+
+
+      .tabbox__icon {
+            color: $black;
+            transition: 0.3s ease;
+            font-size: 3em;
+      }
+}
+
+
+.slider-nav .slick-current {
+      border-bottom: 6px solid $primary-color;
+      position: relative;
+
+      .tabbox__icon {
+            color: $primary-color;
+            transition: 0.3s ease;
+      }
+
+}
+
+
+
+
+.slider-for__title {
+
+}
+
+
+.slicktabs__title {
+      text-transform: uppercase;
+      margin: 0;
+}
+
+.slicktabs__text {
+      padding: 1.6em 0;
+}

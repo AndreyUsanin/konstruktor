@@ -1,0 +1,45 @@
+{{#ifequal type 'knob'}}
+<a class="knob" href="">Подробнее</a>
+{{/ifequal}}
+
+
+{{#ifequal type 'knob--hollow'}}
+<a class="knob knob--hollow" href="">Подробнее</a>
+{{/ifequal}}
+
+{{#ifequal type 'knob-link'}}
+<a class="knob-link" href="">Все услуги</a>
+{{/ifequal}}
+
+{{#ifequal type 'icon'}}
+<a class="knob" href="">
+      <span class="knob__inner">
+            <svg class="knob__icon"><use xlink:href="assets/img/sprite.svg#icon-cog"></use></svg>
+            Подробнее
+      </span>
+</a>
+{{/ifequal}}
+
+{{#ifequal type 'group'}}
+<div class="knob-group">
+      <a class="knob" href="">Подробнее</a>
+      <a class="knob" href="">Заказать</a>
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'icon-group'}}
+<div class="knob-group">
+      <a class="knob" href="">
+            <span class="knob__inner">
+                  <svg class="knob__icon"><use xlink:href="assets/img/sprite.svg#icon-cog"></use></svg>
+                  Подробнее
+            </span>
+      </a>
+      <a class="knob" href="">
+            <span class="knob__inner">
+                  <svg class="knob__icon"><use xlink:href="assets/img/sprite.svg#icon-eye"></use></svg>
+                  Заказать
+            </span>
+      </a>
+</div>
+{{/ifequal}}

@@ -1,0 +1,46 @@
+.form__textarea {
+      height: 230px;
+      border: 1px solid $medium-gray;
+
+
+      &:focus {
+            border: 1px solid $primary-color;
+            box-shadow: none;
+      }
+}
+
+.form__select {
+
+      border: 1px solid $medium-gray;
+
+      &:focus {
+            box-shadow: none;
+            border: 1px solid $primary-color;
+      }
+}
+
+.form__input {
+      margin-bottom: $global-margin * 2;
+      border: 1px solid $medium-gray;
+
+      &:focus {
+            border: 1px solid $primary-color;
+            box-shadow: none;
+      }
+}
+
+.form__date {
+
+      margin-bottom: $global-margin * 2;
+      border: 1px solid $medium-gray;
+
+      &:focus {
+            border: 1px solid $primary-color;
+            box-shadow: none;
+      }
+}
+
+
+
+@import 'iconform';
+@import 'h-iconform';

@@ -1,0 +1,68 @@
+{{#ifequal type 'feature'}}
+{{#each global.feature}}
+<div class="medium-4 cell">
+      <div class="feature">
+            <div class="feature__inner">
+                  <div class="feature__header">
+                        <div class="feature__iconbox">
+                              <span class="feature__icon {{icon}}"></span>
+                        </div>
+                        <h3 class="feature__title">{{title}}</h3>
+                  </div>
+                  <div class="feature__content">
+                        <span class="feature__info">{{info}}</span>
+                  </div>
+                  <div class="feature__footer">
+                        {{> knob type='knob'}}
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+{{#ifequal type 'h-feature'}}
+{{#each global.feature}}
+<div class="medium-4 cell">
+      <div class="h-feature">
+            <div class="h-feature__inner">
+                  <div class="h-feature__header">
+                        <div class="h-feature__iconbox">
+                              <span class="h-feature__icon {{icon}}"></span>
+                        </div>
+                        <span class="h-feature__number">{{numberz}}</span>
+                  </div>
+                  <div class="h-feature__content">
+                        <h3 class="h-feature__title">{{title}}</h3>
+                        <span class="h-feature__info">{{info}}</span>
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+{{#ifequal type 'li-feature'}}
+{{#each global.feature}}
+<div class="medium-4 cell">
+      <div class="li-feature">
+            <div class="li-feature__inner">
+                  <div class="li-feature__header">
+                        <div class="li-feature__iconbox">
+                              <span class="li-feature__icon {{icon}}"></span>
+                        </div>
+                        <h3 class="li-feature__title">{{title}}</h3>
+                  </div>
+                  <div class="li-feature__content">
+                        <span class="li-feature__info">{{info}}</span>
+                  </div>
+                  <div class="li-feature__footer">
+                        {{> knob type='knob'}}
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}

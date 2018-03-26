@@ -1,0 +1,24 @@
+.infobox {
+      display: flex;
+      list-style: none;
+
+      &__item {
+            display: flex;
+            padding-right: 2em;
+      }
+
+      &__icon {
+            font-size: 1em;
+            color: $black;
+            margin-right: 0.5em;
+      }
+
+      &__title {
+
+      }
+}
+
+
+
+@import 'h-infobox';
+@import 'li-infobox';

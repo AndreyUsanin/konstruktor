@@ -1,0 +1,50 @@
+{{#ifequal type 'list'}}
+{{#each global.list}}
+<div class="list">
+      <div class="list__inner">
+            <div class="list__item">
+                  <div class="list__iconbox">
+                        <span class="list__icon {{icon}}"></span>
+                  </div>
+                  <div class="list__content">
+                        <h5 class="list__title">{{title}}</h5>
+                        <span class="list__info">{{info}}</span>
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+{{#ifequal type 'h-list'}}
+{{#each global.list}}
+<div class="h-list">
+      <div class="h-list__inner">
+            <div class="h-list__item">
+                  <div class="h-list__header">
+                        <div class="h-list__iconbox">
+                              <span class="h-list__icon {{icon}}"></span>
+                        </div>
+                              <h5 class="h-list__title">{{title}}</h5>
+                  </div>
+                  <div class="h-list__content">
+                        <span class="h-list__info">{{info}}</span>
+                  </div>
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+{{#ifequal type 'li-list'}}
+{{#each global.list}}
+      <ul class="li-list__list">
+            <li class="li-list__item">
+                  <span class="li-list__type"><span class="li-list__icon {{icon}}"></span>Телефон</span>
+                  <span class="li-list__info">8 800 5000 700</span>
+            </li>
+      </ul>
+{{/each}}
+{{/ifequal}}

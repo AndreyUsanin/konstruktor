@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+
+    &--topheader {
+      align-items: center;
+      margin-top: 20px;
+    }
+}
+
+.logo__img {
+    width: 100px;
+    height: auto;
+}

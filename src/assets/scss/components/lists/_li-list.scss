@@ -1,0 +1,28 @@
+.li-list {
+
+      &__icon {
+            margin-right: 0.5em;
+      }
+
+      &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+      }
+
+      &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $light-gray;
+            height: 5em;
+      }
+
+      &__type {
+            font-weight: bold;
+      }
+
+      &__info {
+
+      }
+}

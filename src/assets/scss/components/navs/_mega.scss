@@ -1,0 +1,155 @@
+// MAIN MENU
+#meganav .meganav {
+
+      &__list-item {
+
+            padding: 2.2em;
+
+            &:hover {
+                  background: $medium-gray;
+            }
+
+      }
+
+      &__link {
+            color: $black;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+      }
+
+      &__icon {
+            margin-right: 1em;
+      }
+}
+
+ .meganav--right {
+             justify-content: flex-end;
+ }
+
+// DROPDOWN PANE
+
+
+#meganav .menu .nested li a {
+      font-weight: 300;
+      padding: 1em 2em;
+      text-transform: capitalize;
+
+      &:last-child {
+            padding-bottom: 2em;
+      }
+
+}
+
+  .megamenu-pane {
+      z-index: 9999;
+      width: 100%;
+      height: auto;
+      background: $light-gray;
+      border-top: 1px solid $black;
+      margin: 0 auto !important;
+      left: 0% !important;
+      right: 0% !important;
+
+      &__list {
+            margin: 0;
+            padding: 1em;
+            list-style: none;
+      }
+
+
+      &__item {
+            list-style: none;
+            padding: 0.5em 0;
+      }
+
+      &__link {
+
+      }
+}
+
+
+//meganav-burger
+
+.meganav__mobile-wrp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: $flatnav-height;
+
+}
+
+
+.meganav-burger {
+      padding: 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 3em;
+            height: 3em;
+            background: $light-gray;
+            border: 1px solid $medium-gray;
+            border-radius: 100%;
+}
+
+            &__icon {
+                  font-size: 1em;
+                  color: $black;
+            }
+
+}
+
+
+
+// canvas
+
+#meganav-canvas {
+      background: $white;
+      width: 300px;
+      box-shadow: none;
+      border-right: 1px solid $medium-gray;
+}
+
+// siidenav
+
+
+.meganav__side {
+
+
+      &__item {
+
+
+            &--parrent {
+                  padding: 2em;
+                  font-weight: bold;
+                  font-size: 2em;
+            }
+      }
+
+      &__link {
+
+            color: $black;
+
+            &--parrent {
+                  padding: 2em;
+                  font-size: 1.2em;
+                  font-weight: bold;
+            }
+      }
+}
+
+// fix offcanvas-wrapepr overlays dropsown pane
+
+.off-canvas-wrapper {
+       @include breakpoint(medium) {
+               overflow: visible;
+              }
+}

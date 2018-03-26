@@ -1,0 +1,29 @@
+
+.modal {
+      padding: 0;
+      position: relative;
+
+      &__inner {
+            padding: 3em 4em;
+            text-align: center;
+      }
+
+      &__close {
+            background: $light-gray;
+            cursor: pointer;
+            width: 3em;
+            height: 3em;
+            position: absolute;
+            top: 0;
+            right: 0;
+      }
+
+      &__icon {
+            color: $medium-gray;
+      }
+
+      &__small {
+            color: $medium-gray;
+            font-size: 0.7em;
+      }
+}

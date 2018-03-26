@@ -1,0 +1,106 @@
+.h-showcase {
+
+  display: flex;
+  flex-direction: column;
+
+  &:hover .h-showcase__icon-link {
+    transition: all .3s linear;
+    transform: scale(1);
+  }
+
+  &__content {
+    height: 400px;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint (small only) {
+      order: 1;
+    }
+
+    @include breakpoint (medium only) {
+      order: 1;
+
+    }
+
+  }
+
+  &__imgbox {
+    position: relative;
+    cursor: pointer;
+    height: 400px;
+    overflow: hidden;
+
+    @include breakpoint (medium only) {
+      order: 2;
+    }
+
+    @include breakpoint (small only) {
+      order: 2;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+
+    @include breakpoint (medium only) {
+
+    }
+
+  }
+
+  &__divider {
+    width: 92px;
+    height: 20px;
+    background: url(../img/curvy-arrow.png) center no-repeat;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: -46px;
+
+
+    &--up {
+
+    @include breakpoint (large) {
+       transform: rotate(180deg);
+       bottom: 0;
+    }
+
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+
+  &__icon-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s linear;
+    transform: scale(0);
+  }
+
+  &__icon {
+    color: $black;
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    left: 0;
+    right: 0;
+  }
+
+}

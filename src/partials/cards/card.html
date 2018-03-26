@@ -1,0 +1,92 @@
+{{#ifequal type 'card'}}
+{{#each global.card-hor}}
+<div class="medium-4 cell">
+      <div class="card">
+            <div class="card__inner">
+                  <div class="card__header">
+                              <img class="card__img" src="{{img__src}}" alt="" >
+                              {{> hover type="hover"}}
+                  </div>
+                  <div class="card__content">
+                        <h4 class="card__title">Aute noster labore nulla</h4>
+                        {{> meta}}
+                        <p class="card__text">
+                              dolore summis quid fore fore enim ipsum veniam esse esse esse cillum esse minim
+                              quorum quorum labore nisi culpa fore
+                        </p>
+                  </div>
+                  <div class="card__footer">
+                              {{> knob type='knob-link'}}
+                  </div>
+
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+
+{{#ifequal type 'h-card'}}
+{{#each global.card-hor}}
+<div class="medium-4 cell">
+      <div class="h-card">
+            <div class="h-card__inner">
+                  <img class="h-card__img" src="{{img__src}}" alt="">
+                  {{> hover type="hover"}}
+            </div>
+      </div>
+</div>
+{{/each}}
+{{/ifequal}}
+
+
+{{#ifequal type 'li-card'}}
+<section class="li-card-area">
+      <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                  <div class="medium-4 cell">
+                        <div class="li-card">
+                              <div class="li-card__inner li-card__inner--one">
+                                    <ul class="li-card__list">
+                                          <li  class="li-card__item li-card__item--first"><a  class="li-card__link" href="#">Промышленные строения</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./logist.html">Логистические центры</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./torgovie-complexi.html">Торговые комплексы</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./sport-complexi.html">Спортивные комплексы</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./bazi-otdiha.html">Базы отдыха</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./admin-zdaniya.html">Административные здания</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="medium-4 cell">
+                        <div class="li-card">
+                              <div class="li-card__inner  li-card__inner--two">
+                                    <ul class="li-card__list">
+                                          <li  class="li-card__item li-card__item--first"><a  class="li-card__link" href="#">Производственные строения</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./garaji.html">Автомастерские | Автомойки</a></li>
+                                          <li   class="li-card__item"><a class="li-card__link" href="./skladi.html">Складские помещения</a></li>
+                                          <li   class="li-card__item"><a class="li-card__link" href="./zavodi.html">Заводы | Цеха</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="medium-4 cell">
+                        <div class="li-card">
+                              <div class="li-card__inner li-card__inner--three">
+                                    <ul class="li-card__list">
+                                          <li  class="li-card__item li-card__item--first"><a  class="li-card__link" href="#">Сельское хозяйство</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./zavi.html">ЗАВы</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./sushilki-zerna.html">Сушилки зерна</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="#">Силосы</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./fermi.html">Животноводческие строения</a></li>
+                                          <li  class="li-card__item"><a  class="li-card__link"  href="./sh-tehnika.html">Сельхозтехника</a></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</section>
+
+{{/ifequal}}

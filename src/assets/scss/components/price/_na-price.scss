@@ -1,0 +1,64 @@
+.na-price {
+
+      &__inner {
+            border: 1px solid $light-gray;
+            background: $white;
+      }
+
+      &__header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: $primary-color;
+            padding: 2em 1em;
+      }
+
+      &__body {
+            padding: 2em 3em;
+      }
+
+      &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+      }
+
+      &__item {
+            line-height: 3em;
+      }
+
+      &__title {
+            color: $white;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 0;
+            margin: 0;
+      }
+
+      &__value {
+            font-size: 3em;
+            font-weight: bold;
+            color: $white;
+            padding: 0;
+            margin: 0;
+      }
+
+      &__value-icon {
+            font-size: 0.5em;
+            color: $white;
+      }
+
+      &__list-icon {
+            color: $primary-color;
+            padding-right: 0.5em;
+
+            &--cross {
+                  color: $medium-gray;
+            }
+      }
+
+      &__footer {
+            padding: 0 0 2em;
+            text-align: center;
+      }
+}

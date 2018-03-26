@@ -1,0 +1,20 @@
+#modal-oc {
+      background: $white;
+      width: 400px;
+      box-shadow: none;
+      border-left: 1px solid $medium-gray;
+}
+
+.modal-oc {
+
+  &__inner {
+    text-align: center;
+    padding:2em;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}

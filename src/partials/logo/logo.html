@@ -1,0 +1,22 @@
+{{#ifequal type 'logo'}}
+      <a class="logo" href="#">
+            <img class="logo__img" src="assets/img/logo.png" alt="">
+      </a>
+
+{{/ifequal}}
+
+
+{{#ifequal type 'logo--topheader'}}
+      <a class="logo logo--topheader" href="#">
+            <img class="logo__img" src="assets/img/logo.png" alt="">
+      </a>
+
+{{/ifequal}}
+
+{{#ifequal type 'logo--light'}}
+<div class="logo logo--header">
+      <a class="logo__link" href="#">
+            <svg class="logo__icon logo__icon--light"><use xlink:href="assets/img/sprite.svg#icon-logo"></use></svg>
+      </a>
+</div>
+{{/ifequal}}

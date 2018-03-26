@@ -1,0 +1,18 @@
+<!-- modal-oc BUTTON -->
+
+<button class="knob" type="button" name="button" data-toggle="modal-oc">Заказать звонок</button>
+
+
+<!-- OFFCANVAS modal-oc -->
+
+<div class="off-canvas position-right modal-oc" id="modal-oc" data-off-canvas data-transition="overlap">
+  <div class="modal-oc__inner">
+    <img  class="modal-oc__img" src="assets/img/man__sqr__01.jpg" alt="">
+      <h3>— Меня зовут Николай</h3>
+      <p>введите номер и я перезвоню в течение 2 минут:</p>
+      <form action="">
+        {{> form type='phone'}}
+        <a class="knob" href="#">Позвонить мне</a>
+      </form>
+  </div>
+</div>

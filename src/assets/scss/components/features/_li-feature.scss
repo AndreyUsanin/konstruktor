@@ -1,0 +1,53 @@
+.li-feature {
+
+      &__inner {
+            padding: 2em;
+            background: lighten($light-gray, 5%);
+      }
+
+      &__header {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+      }
+
+      &__content {
+            text-align: left;
+      }
+
+      &__footer {
+            text-align: left;
+      }
+
+      &__iconbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $secondary-color;
+            border-radius: 100%;
+            width: 4em;
+            height: 4em;
+            flex-shrink: 1;
+      }
+
+      &__icon {
+            font-size: 1.5em;
+            color: $white;
+      }
+
+      &__title {
+            font-size: 22px;
+            padding-top: 1em;
+            font-weight: bold;
+      }
+
+      &__info {
+            color: $dark-gray;
+            padding: 1em 0;
+            display: block;
+      }
+
+      &__button {
+            background: $dark-gray;
+      }
+}

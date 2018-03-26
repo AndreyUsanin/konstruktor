@@ -1,0 +1,51 @@
+.na-card {
+
+  display: flex;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $light-gray;
+    padding: 2em;
+
+    &:hover + .na-card__more-link {
+      background: $black;
+    }
+  }
+
+  &__content {
+    border-left: 2px solid $light-gray;
+    padding-left: 1em;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__icon {
+    font-size: 3em;
+    padding-right: 0.5em;
+  }
+
+  &__more-icon{
+    font-size: 2em;
+    color: $medium-gray;
+  }
+
+  &__more-link {
+    background: $light-gray;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+      &:hover {
+        background: $black;
+      }
+  }
+
+  &__more {
+    padding: 0 1em;
+  }
+
+}

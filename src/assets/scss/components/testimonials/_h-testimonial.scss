@@ -1,0 +1,54 @@
+.h-testimonial {
+
+
+      &__inner {
+
+      }
+
+      &__img-holder {
+            padding-right: 1em;
+      }
+
+      &__img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+      }
+
+      &__header {
+
+      }
+
+      &__icon {
+            display: inline-block;
+            width: 3em;
+            height: 3em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: $white;
+            margin: 1em 0;
+      }
+
+      &__content {
+            display: flex;
+            align-items: center;
+            margin-top: 2em;
+            padding-top: 2em;
+
+      }
+
+      &__name {
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+      }
+
+      &__info {
+            display: block;
+
+      }
+
+      &__text {
+
+      }
+}

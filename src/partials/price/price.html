@@ -1,0 +1,107 @@
+{{#ifequal type 'price'}}
+<div class="price">
+      <div class="price__inner">
+            <div class="price__header">
+                  <h3 class="price__title">Базовый</h3>
+                  <h4 class="price__value"> 4.900 <span class="price__icon icon-tag"></span></h4>
+            </div>
+            <div class="price__body">
+                  <ul class="price__list">
+                        <li class="price__item">25 Analytics Compaign</li>
+                        <li class="price__item">1,300 Keywords</li>
+                        <li class="price__item">50 links</li>
+                        <li class="price__item">25 social media reviews</li>
+                        <li class="price__item">Free On Page Optimization</li>
+                  </ul>
+            </div>
+            <div class="price__footer">
+                  {{> knob type='knob'}}
+            </div>
+      </div>
+</div>
+{{/ifequal}}
+
+
+{{#ifequal type 'h-price'}}
+<div class="h-price">
+      <div class="h-price__inner">
+            <div class="h-price__header">
+                  <h3 class="h-price__title">Базовый</h3>
+                  <h4 class="h-price__value">4.900<span class="h-price__icon icon-tag"></span></h4>
+
+
+            </div>
+            <div class="h-price__body">
+                  <ul class="h-price__list">
+                        <li class="h-price__item">25 Analytics Compaign</li>
+                        <li class="h-price__item">1,300 Keywords</li>
+                        <li class="h-price__item">50 links</li>
+                        <li class="h-price__item">25 social media reviews</li>
+                        <li class="h-price__item h-price__item--last">Free On Page Optimization</li>
+                  </ul>
+            </div>
+            <div class="h-price__footer">
+                  {{> knob type='knob'}}
+            </div>
+      </div>
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'li-price'}}
+<div class="li-price">
+      <div class="li-price__inner">
+            <div class="li-price__header">
+                  <h3 class="li-price__title">Базовый</h3>
+                  <div class="li-price__iconbox">
+                        <span class="li-price__icon icon-cog2"></span>
+                  </div>
+                  <h4 class="li-price__value"> 4.900 <span class="li-price__value-icon icon-tag"></span></h4>
+            </div>
+            <div class="li-price__body">
+                  {{> knob type='knob'}}
+            </div>
+            <div class="li-price__footer">
+                  <ul class="li-price__list">
+                        <li class="li-price__item">25 Analytics Compaign</li>
+                        <li class="li-price__item">1,300 Keywords</li>
+                        <li class="li-price__item">50 links</li>
+                        <li class="li-price__item">25 social media reviews</li>
+                        <li class="li-price__item">Free On Page Optimization</li>
+                  </ul>
+            </div>
+      </div>
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'na-price'}}
+<div class="na-price">
+      <div class="na-price__inner">
+            <div class="na-price__header">
+                  <h3 class="na-price__title">Базовый</h3>
+                  <h4 class="na-price__value"> 4.900 <span class="na-price__value-icon icon-tag"></span></h4>
+            </div>
+            <div class="na-price__body">
+                  <ul class="na-price__list">
+                        <li class="na-price__item">
+                              <span class="na-price__list-icon icon-checkmark"></span>
+                              25 Analytics Compaign</li>
+                        <li class="na-price__item">
+                              <span class="na-price__list-icon icon-checkmark"></span>
+                              1,300 Keywords</li>
+                        <li class="na-price__item">
+                              <span class="na-price__list-icon icon-checkmark"></span>
+                              50 links</li>
+                        <li class="na-price__item">
+                              <span class="na-price__list-icon na-price__list-icon--cross  icon-cross"></span>
+                              <del>25 social media reviews</del></li>
+                        <li class="na-price__item">
+                              <span class="na-price__list-icon na-price__list-icon--cross  icon-cross"></span>
+                              <del>Free On Page Optimization</del></li>
+                  </ul>
+            </div>
+            <div class="na-price__footer">
+                  {{> knob type='knob'}}
+            </div>
+      </div>
+</div>
+{{/ifequal}}

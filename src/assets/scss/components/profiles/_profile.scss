@@ -1,0 +1,89 @@
+.profile {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &__img {
+            border-radius: 100%;
+            flex: 0 0 auto;
+      }
+
+      &__name {
+            margin: 0;
+            font-weight: bold;
+      }
+
+      &__content {
+            padding-left: 2em;
+            flex: 0 0 auto;
+      }
+
+      &__signature {
+            padding-left: 2em;
+
+            @include breakpoint(small only) {
+                  display: none;
+            }
+
+      }
+}
+
+
+.h-profile-wrp {
+      padding: 1em;
+}
+
+.h-profile {
+      position: relative;
+      text-align: center;
+
+      &:hover .h-profile__content {
+            background: rgba($primary-color, 0.8);
+            color: $white;
+      }
+
+      &:after {
+            content: '';
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom;
+            border-left: 2px solid $medium-gray;
+            border-right: 2px solid $medium-gray;
+            z-index: 3;
+      }
+
+
+      &__img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+      }
+
+      &__content {
+            background: rgba($white, 0.8);
+            top: auto;
+            position: absolute;
+            bottom: 2px;
+            left: 0px;
+            right: 0px;
+            z-index: 2;
+            transition: 0.3s ease;
+      }
+
+      &__name {
+            padding-top: 1em;
+            font-size: 1em;
+            margin: 0;
+      }
+
+      &__info {
+            display: block;
+            padding-bottom: 1em;
+            font-size: 1.2em;
+      }
+}

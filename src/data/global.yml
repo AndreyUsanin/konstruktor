@@ -1,0 +1,102 @@
+folio:
+      -
+            img__src: 'assets/img/folio__1.jpg'
+      -
+            img__src: 'assets/img/folio__2.jpg'
+      -
+            img__src: 'assets/img/folio__3.jpg'
+
+
+card-hor:
+      -
+            img__src: 'assets/img/img__hor__01.jpg'
+      -
+            img__src: 'assets/img/img__hor__02.jpg'
+      -
+            img__src: 'assets/img/img__hor__03.jpg'
+
+
+card-sqr:
+      -
+            img__src: 'assets/img/img__sqr__01.jpg'
+      -
+            img__src: 'assets/img/img__sqr__02.jpg'
+      -
+            img__src: 'assets/img/img__sqr__03.jpg'
+
+
+socicon:
+      -
+            icon: icon-facebook2
+      -
+            icon: icon-vk
+      -
+            icon: icon-telegram
+
+
+navitem:
+      -
+            nav__item: О нас
+      -
+            nav__item: Цены
+      -
+            nav__item: Подобрать сайт
+      -
+            nav__item: Контакты
+
+
+feature:
+      -
+            title: Expert Advisor
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon:  icon-write
+            numberz: '01'
+      -
+            title: Trsuted Vendor
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon: icon-flag
+            numberz: '02'
+      -
+            title: Fast Process
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon: icon-bell
+            numberz: '03'
+
+list:
+      -
+            title: First Service
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon:  icon-write
+      -
+            title: Trsuted Vendor
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon:  icon-flag
+      -
+            title: Fast Process
+            info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+            icon:  icon-bell
+
+infobox:
+      -
+            title: + 7 920 2-12-85-06
+            info: Have a question? call us now
+            icon: icon-cog
+      -
+            title: + 7 920 2-12-85-06
+            info: Have a question? call us now
+            icon: icon-eye
+      -
+            title: + 7 920 2-12-85-06
+            info: Have a question? call us now
+            icon: icon-lab
+
+counter:
+      -
+            number:  '1200'
+            title: Lorem ipsum dolor
+      -
+            number:  '426'
+            title: Sed do eiusmod tempor
+      -
+            number:  '2100'
+            title:  Tempor incididunt ut labore

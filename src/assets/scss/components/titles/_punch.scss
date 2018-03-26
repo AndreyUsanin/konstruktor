@@ -1,0 +1,28 @@
+.punch {
+
+      &__title {
+            font-size: 52px;
+            font-weight: bold;
+            line-height: 1em;
+            letter-spacing: -1px;
+      }
+
+      &__accent {
+            color: $medium-gray;
+      }
+
+      &__info {
+            padding: 1em 0;
+
+      }
+
+      &--slider {
+            height: 600px;
+      	position: relative;
+      	z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+      }
+}

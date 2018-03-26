@@ -1,0 +1,59 @@
+.h-steps {
+
+      &__img {
+
+                                      @include breakpoint(small only) {
+                                    padding-bottom: 2em;
+                                     }
+      }
+
+      &__header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+      }
+
+      &__title-num {
+            display: block;
+            font-size: 3em;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-weight: bold;
+            background: $light-gray;
+            display: flex;
+            margin-right: 0.5em;
+            padding: 0 0 10px 20px;
+      }
+
+      &__title {
+            font-weight: bold;
+            text-transform: uppercase;
+      }
+
+      &__linkbox {
+            position: relative;
+            height: auto;
+
+                          @include breakpoint(small only) {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              padding: 1em 0;
+                         }
+      }
+
+      &__link {
+            position: absolute;
+            top: -50px;
+
+              @include breakpoint(small only) {
+                  position: static;
+                  order: 3;
+             }
+      }
+
+      &__info {
+            font-size: 1.6em;
+      }
+}

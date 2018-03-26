@@ -1,0 +1,118 @@
+.split {
+      @extend .grid-x;
+
+
+      &__left {
+            background: url('../img/hero-bkg-01.jpg') center center no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3em;
+            position: relative;
+            z-index: 1;
+            color: $white;
+
+
+      	      &::after {
+                  background: $primary-color;
+                  position: absolute;
+                  content: "";
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: -1;
+                  opacity: 0.8;
+            }
+      }
+
+      &__right {
+            background: url('../img/hero-bkg-02.jpg') center center no-repeat;
+            background-size: cover;
+            z-index: 2;
+            display: flex;
+            min-height: 600px;
+            align-items: center;
+      }
+
+      &__left-inner {
+            padding: 2em 6em 2em 2em;
+      }
+
+      &__right-inner {
+            background: $white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 2em;
+            margin: 0 4em 0 -6em;
+
+             @include breakpoint(medium down) {
+            margin: 2em;
+             }
+      }
+}
+
+// PR-SPLIT
+
+.pr-split {
+      @extend .grid-x;
+
+
+      &__left {
+            background: url('../img/hero-bkg-01.jpg') center center no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3em;
+            position: relative;
+            z-index: 1;
+            color: $white;
+
+
+      	      &::after {
+                  background: $primary-color;
+                  position: absolute;
+                  content: "";
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: -1;
+                  opacity: 0.8;
+            }
+      }
+
+      &__right {
+            background: $light-gray;
+            background-size: cover;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            min-height: 600px;
+            padding: 3em;
+            align-items: flex-start;
+            justify-content: center;
+      }
+
+
+      &__right-inner {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+      }
+
+      &__title {
+            font-weight: bold;
+      }
+
+      &__text {
+            padding: 2em 0;
+      }
+}

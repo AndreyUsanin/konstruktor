@@ -1,0 +1,34 @@
+
+// k-single input
+
+.k-single-input {
+      position: relative;
+
+      &__field {
+
+      min-width: 0;  
+
+            &:focus {
+                  border: 1px solid $light-gray;
+                  box-shadow: none;
+            }
+      }
+
+
+      &__knobbox {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+
+      }
+
+      &__knob {
+            border-radius: 0;
+            margin: 0;
+            padding: 0.8em;
+      }
+
+      &__icon {
+            font-size: 0.8em;
+      }
+}

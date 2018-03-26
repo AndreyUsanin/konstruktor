@@ -1,0 +1,47 @@
+.countdown-timer {
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  @include breakpoint(small only) {
+    flex-direction: column;
+  }
+
+
+  &__item {
+    font-size: 6em;
+    font-weight: bold;
+    border: 5px solid $black;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(small only) {
+      width: 100%;
+      margin-bottom: 0.5em;
+      font-size: 4em;
+    }
+
+  }
+
+  &__separator {
+    font-size: 6em;
+    font-weight: bold;
+    
+    @include breakpoint(small only) {
+      display: none;
+    }
+
+  }
+}
+
+// NOT NESSACERY
+
+.countdown-timer-bkg {
+  background: url('../img/countdown-timer-bkg.png') center center no-repeat;
+  background-color: $white;
+  background-size: cover;
+  position: relative;
+  padding: 10em 0;
+}

@@ -1,0 +1,16 @@
+.feature {
+
+      &__icon {
+            font-size: 3em;
+            color: $black;
+      }
+}
+
+
+
+//STYLES
+
+
+
+@import 'h-feature';
+@import 'li-feature';

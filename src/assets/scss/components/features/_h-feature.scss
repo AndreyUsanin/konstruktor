@@ -1,0 +1,48 @@
+.h-feature {
+
+      &__inner {
+            display: flex;
+      }
+
+      &__header {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1em 0 0;
+      }
+
+      &__content {
+            text-align: left;
+      }
+
+      &__footer {
+            text-align: left;
+      }
+
+
+      &__icon {
+            font-size: 3em;
+            color: $black;
+      }
+
+      &__number {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: -2px;
+            color: $light-gray;
+      }
+
+      &__title {
+            font-size: 22px;
+            font-weight: bold;
+      }
+
+      &__info {
+            color: $dark-gray;
+            padding: 1em 0;
+            display: block;
+      }
+
+      &__button {
+            background: $primary-color;
+      }
+}

@@ -1,0 +1,43 @@
+{{#ifequal type 'nav'}}
+<div class="nav">
+      <ul class="nav__list">
+            {{#each global.navitem}}
+            <li class="nav__item"><a class="nav__link" href="#">{{nav__item}}</a></li>
+            {{/each}}
+      </ul>
+</div>
+{{/ifequal}}
+
+
+{{#ifequal type 'nav--light'}}
+<div class="nav">
+      <ul class="nav__list">
+            {{#each global.navitem}}
+            <li class="nav__item"><a class="nav__link nav__link--light" href="#">{{nav__item}}</a></li>
+            {{/each}}
+      </ul>
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'dropdown'}}
+<ul class="dropdown menu align-right" data-dropdown-menu data-alignment="right">
+      <li class="is-dropdown-submenu-parent">
+            <a href="#">О нас</a>
+      <ul class="menu">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1A</a></li>
+      </ul>
+      </li>
+      <li><a href="#">Цены</a></li>
+      <li class="is-dropdown-submenu-parent">
+      <a href="#">Подобрать сайт</a>
+            <ul class="menu">
+                    <li><a href="#">Item 1A</a></li>
+                    <li><a href="#">Item 1A</a></li>
+                    <li><a href="#">Item 1A</a></li>
+            </ul>
+      </li>
+      <li><a href="#">Контакты</a></li>
+</ul>
+{{/ifequal}}

@@ -1,0 +1,40 @@
+{{#ifequal type 'owl-slider'}}
+<div class="hero-slider owl-carousel  owl-theme">
+      <div class="hero-slider__slideone">
+            <div class="grid-container">
+                  <div class="medium-6">
+                       {{> punch type='punch'}}
+                 </div>
+            </div>
+      </div>
+      <div class="hero-slider__slidetwo">
+            <div class="grid-container">
+                  <div class="medium-6">
+                        {{> punch type='punch'}}
+                 </div>
+            </div>
+      </div>
+</div>
+{{/ ifequal}}
+
+
+{{#ifequal type 'slick-slider'}}
+<div class="h-slider slick-slider slider single-item">
+      <div class="h-slider__slideone">
+            <div class="grid-container">
+                  <div class="grid-x grid-margin-x">
+                        <div class="medium-12 cell">
+                              {{> punch type='punch'}}
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <div class="h-slider__slidetwo">
+            <div class="grid-container">
+                  <div class="medium-12 cell">
+                        {{> punch type='punch'}}
+                  </div>
+            </div>
+      </div>
+</div>
+{{/ ifequal}}

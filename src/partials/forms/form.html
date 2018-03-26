@@ -1,0 +1,110 @@
+<!-- SIMPLE FIELDS  -->
+
+{{#ifequal type 'email'}}
+      <input class="form__input" type="email" placeholder="Email">
+{{/ifequal}}
+
+
+{{#ifequal type 'name'}}
+      <input class="form__input" type="text" placeholder="Имя полностью">
+{{/ifequal}}
+
+{{#ifequal type 'phone'}}
+      <input class="form__input" type="tel" placeholder="Номер телефона">
+{{/ifequal}}
+
+{{#ifequal type 'date'}}
+      <input class="form__date" type="text" placeholder="Дата">
+{{/ifequal}}
+
+{{#ifequal type 'text'}}
+      <input class="form__input" type="text" placeholder="Name">
+{{/ifequal}}
+
+{{#ifequal type 'textarea'}}
+      <textarea class="form__textarea" name="name"></textarea>
+{{/ifequal}}
+
+
+{{#ifequal type 'select'}}
+            <select class="form__select">
+                  <option value="husker">Опция 1</option>
+                  <option value="starbuck">Опция 2</option>
+                  <option value="hotdog">Опция 3</option>
+                  <option value="hotdog">Опция 4</option>
+            </select>
+{{/ifequal}}
+
+
+<!-- ICON FIELDS  -->
+{{#ifequal type 'icon-name'}}
+<div class="iconform">
+      <span class="iconform__icon icon-user2"></span>
+      <input class="iconform__input" type="text" placeholder="Имя полностью">
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'icon-email'}}
+<div class="iconform">
+      <span class="iconform__icon icon-envelope"></span>
+      <input class="iconform__input" type="email" placeholder="Email">
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'icon-date'}}
+<div class="iconform">
+      <span class="iconform__icon icon-clock2"></span>
+      <input class="iconform__date" type="text" placeholder="Дата">
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'icon-select'}}
+<div class="iconform">
+      <select class="iconform__select">
+            <option value="husker">Опция 1</option>
+            <option value="starbuck">Опция 2</option>
+            <option value="hotdog">Опция 3</option>
+            <option value="hotdog">Опция 4</option>
+      </select>
+      <span class="iconform__icon icon-menu"></span>
+</div>
+{{/ifequal}}
+
+
+<!-- H ICON FIELDS  -->
+
+
+{{#ifequal type 'h-icon-name'}}
+<div class="h-iconform">
+      <span class="h-iconform__icon icon-user2"></span>
+      <input class="h-iconform__input" type="text" placeholder="Имя полностью">
+</div>
+{{/ifequal}}
+
+
+{{#ifequal type 'h-icon-email'}}
+<div class="h-iconform">
+      <span class="h-iconform__icon icon-envelope"></span>
+      <input class="h-iconform__input" type="email" placeholder="Email">
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'h-icon-date'}}
+<div class="h-iconform">
+      <span class="h-iconform__icon icon-clock2"></span>
+      <input class="h-iconform__date" type="text" placeholder="Дата">
+</div>
+{{/ifequal}}
+
+{{#ifequal type 'h-icon-select'}}
+<div class="h-iconform">
+      <span class="h-iconform__icon icon-menu"></span>
+      <select class="h-iconform__select">
+            <option value="husker">Опция 1</option>
+            <option value="starbuck">Опция 2</option>
+            <option value="hotdog">Опция 3</option>
+            <option value="hotdog">Опция 4</option>
+      </select>
+
+</div>
+{{/ifequal}}

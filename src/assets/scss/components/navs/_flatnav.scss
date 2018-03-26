@@ -1,0 +1,66 @@
+$flatnav-height: 90px;
+
+
+#flatnav .flatnav {
+
+
+      &__item {
+            padding: 2em;
+
+            @include breakpoint (medium down) {
+              padding-left: 0;
+            }
+
+            &--last {
+              padding-right: 0;
+            }
+      }
+
+      &__link {
+            padding: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+      }
+
+}
+
+.flatnav__mobile-wrp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: $flatnav-height;
+
+}
+
+
+ .flatnav--right {
+      justify-content: flex-end;
+ }
+
+//flatnav-burger
+
+.flatnav-burger {
+      padding: 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 3em;
+            height: 3em;
+            background: $light-gray;
+            border: 1px solid $medium-gray;
+            border-radius: 100%;
+}
+
+            &__icon {
+                  font-size: 1em;
+                  color: $black;
+            }
+
+}

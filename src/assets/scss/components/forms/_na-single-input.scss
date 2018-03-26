@@ -1,0 +1,39 @@
+.na-single-input {
+      align-items: stretch;
+      display: flex;
+      width: 100%;
+      margin-bottom:  $global-margin * 2;
+
+      &__knobbox {
+            display: flex;
+            flex: 0 1 auto;
+            margin-left: 1em;
+      }
+
+      &__field {
+            flex: 1 1 0;
+            padding: 1em;
+            height: auto;
+            margin: 0;
+            border-radius: $global-radius;
+            border: 1px solid $medium-gray;
+            min-width: 0;
+
+            &:focus {
+                  border: 1px solid $medium-gray;
+                  box-shadow: none;
+            }
+      }
+
+      &__icon {
+            font-size: 1em;
+            color: $white;
+      }
+
+      &__knob {
+            border-radius: 0 $global-radius $global-radius 0;
+            display: flex;
+            align-items: center;
+      }
+
+}

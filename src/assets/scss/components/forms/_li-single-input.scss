@@ -1,0 +1,41 @@
+.li-single-input {
+      align-items: stretch;
+      display: flex;
+      width: 100%;
+      margin-bottom:  $global-margin * 2;
+
+      &__knobbox {
+            display: flex;
+            flex: 0 0 auto;
+      }
+
+      &__field {
+            flex: 1 1 0;
+            padding: 1em;
+            height: auto;
+            margin: 0;
+            border-radius:  $global-radius 0 0 $global-radius;
+            border: 1px solid $medium-gray;
+            min-width: 0;
+
+            &:focus {
+                  border: 1px solid $medium-gray;
+                  box-shadow: none;
+            }
+      }
+
+      &__icon {
+            font-size: 1em;
+            color: $white;
+            margin-right: 0.5em;
+      }
+
+      &__knob {
+            border-radius: 0 $global-radius $global-radius 0;
+            padding-right: 3em;
+            padding-left: 3em;
+            display: flex;
+            align-items: center;
+      }
+
+}

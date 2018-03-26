@@ -1,0 +1,36 @@
+.hovers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition:  0.3s;
+      opacity: 0;
+
+      &__inner {
+            padding: 2em;
+      }
+
+      &__link {
+            margin-right: 1em;
+      }
+
+      &__iconbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3em;
+            width: 3em;
+            background: $white;
+      }
+
+      &__icon {
+            font-size: 1em;
+            color: $black;
+      }
+}

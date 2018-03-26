@@ -1,0 +1,68 @@
+
+.na-tabs {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+
+
+             @include breakpoint(small only) {
+              flex-direction: column;
+              }
+
+      &__content {
+            border: 1px solid $medium-gray;
+            padding: 2em;
+      }
+
+      &__title {
+            color: $medium-gray;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+      }
+
+
+      &__item {
+            padding: 1em;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -1px;
+            flex-grow: 1;
+      }
+
+
+      &__icon {
+            margin-right: 0.5em;
+      }
+
+      &__link {
+            color: $dark-gray;
+
+            &:hover {
+                  color: $black;
+            }
+      }
+}
+
+.na-tabs__item.is-active {
+      background: $white;
+      border-right: 1px solid $medium-gray;
+      border-left: 1px solid $medium-gray;
+      border-top: 1px solid$medium-gray;
+      position: relative;
+
+
+       @include breakpoint(small only) {
+             border: 1px solid $medium-gray;
+        }
+
+
+      & a {
+            color: $black;
+      }
+}

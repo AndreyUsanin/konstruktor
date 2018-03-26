@@ -1,0 +1,27 @@
+$section-margin: 5em;
+
+.main-header {
+      background: $light-gray;
+}
+
+
+
+.divider {
+      margin: 4em 0;
+      border-bottom: 1px solid $light-gray;
+}
+
+
+.section {
+      margin-bottom: $section-margin;
+
+      &--first {
+            margin-top: $section-margin;
+      }
+}
+
+
+
+.test-header {
+      background: $light-gray;
+}
