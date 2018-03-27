@@ -3,73 +3,73 @@
 @import 'layout';
 
 
-
-
-
+//
+//
+//
 @import 'components/logo/logo';
 @import 'components/heroes/hero-slider';
 @import 'components/heroes/hero';
 @import 'components/heroes/video-hero';
-
+//
 @import 'components/knobs/knob';
 @import 'components/titles/punch';
-
-
+//
+//
 @import 'components/heroes/parallax-hero';
 @import 'components/sliders/slider';
 @import 'components/gallery/isogrid';
 @import 'components/gallery/gallery';
 @import 'components/gallery/showcase';
 @import 'components/gallery/h-showcase';
-
+//
 @import 'components/forms/form';
 @import 'components/forms/single-input';
-
+//
 @import 'components/tags/tags';
-
+//
 @import 'components/cards/card';
 @import 'components/cards/na-card';
 @import 'components/cards/k-card';
 @import 'components/cards/cu-card';
-
+//
 @import 'components/hover/hover';
 @import 'components/meta/meta';
-
-
-
+//
+//
+//
 @import 'components/price/price';
 @import 'components/features/feature';
-
-
-
+//
+//
+//
 @import 'components/navs/flatnav';
 @import 'components/navs/flatnav-oc';
 @import 'components/navs/flatnav-rvl';
 @import 'components/navs/ddnav';
 @import 'components/navs/mega';
 @import 'components/navs/burger';
-// @import 'components/navs/h-topnav';
 
-
-// TOPHEADERS
+//
+//
+// // TOPHEADERS
 @import 'components/topheaders/topheader';
 @import 'components/topheaders/h-topheader';
-
-
+//
+//
 @import 'components/tabs/slicktabs';
 @import 'components/tabs/h-tabs';
 @import 'components/tabs/li-tabs';
 @import 'components/tabs/na-tabs';
-
-// MODALS
+//
+// // MODALS
 @import 'components/modals/modal';
 @import 'components/modals/modal-oc';
 @import 'components/modals/search-fs';
-
+//
 @import 'components/socicons/socicons';
 @import 'components/testimonials/testimonial';
-
-
+//
+//
 @import 'components/lists/list';
 @import 'components/info/infobox';
 @import 'components/containers/split';
@@ -78,10 +78,13 @@
 @import 'components/profiles/profile';
 @import 'components/counter/counter';
 @import 'components/counter/countdown-timer';
-
-// STEPS
+//
+// // STEPS
 @import 'components/steps/h-steps';
 @import 'components/steps/li-steps';
-
+//
 @import 'components/datepicker';
-@import 'components/lightbox';
+
+
+// TIMELINES
+@import 'components/timelines/vert-timeline';

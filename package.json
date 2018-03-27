@@ -10,10 +10,16 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "foundation-sites": "~6.4.1",
+    "isotope-layout": "^3.0.5",
     "jquery": ">=3.0.0",
-    "what-input": "^4.1.3",
-    "motion-ui": "~1.2.2"
+    "jquery-parallax.js": "^1.5.0",
+    "lightcase": "^2.5.0",
+    "motion-ui": "~1.2.2",
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1",
+    "what-input": "^4.1.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",

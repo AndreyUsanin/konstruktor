@@ -4,6 +4,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
+
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid;
@@ -52,11 +53,15 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+// SLICK
 
-@import './vendors/owl/owl.carousel.scss';
-@import './vendors/owl/owl.theme.default';
-@import '../../../bower_components/lightcase/src/scss/lightcase.scss';
-@import '../../../bower_components/slick-carousel/slick/slick.scss';
+
+//
+
+
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/air-datepicker/src/sass/datepicker.scss';
+@import '../../../node_modules/lightcase/src/scss/lightcase.scss';
+
 @import 'custom';
-
 @import 'fonts';

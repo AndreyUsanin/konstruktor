@@ -1,45 +1,33 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 
-
+window.jQuery = $;
 window.$ = $;
+
+
+var datepicker = require('../../../node_modules/air-datepicker/dist/js/datepicker.js');
+var parallax = require('../../../node_modules/jquery-parallax.js/parallax.js');
+var lightcase = require('../../../node_modules/lightcase/src/js/lightcase.js');
+var isotope = require('../../../node_modules/isotope-layout/dist/isotope.pkgd.js');
+var waypoint = require('../../../node_modules//waypoints/lib/jquery.waypoints.js');
+
+// VENDORS FOLDER
+
+var counterUp = require('./vendors/jquery.counterup.js');
+var countdown = require('./vendors/jquery.countdown.js');
+var verticalTimeline = require('./vendors/vertical-timeline.js');
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-//
+
+import slick from 'slick-carousel';
 
 
-import '../../../bower_components/slick-carousel/slick/slick.js';
-import '../../../bower_components/parallax.js/parallax.js';
-import '../../../bower_components/air-datepicker/dist/js/datepicker.js';
-import '../../../bower_components/isotope/dist/isotope.pkgd.js';
-import '../../../bower_components/lightcase/src/js/lightcase.js';
-import '../../../bower_components/countdown/jquery.countdown.js';
 
-// COUNTER Может распидорасить
-import '../../../bower_components/waypoints/lib/jquery.waypoints.js';
-import '../../../bower_components/jquery.counterup/jquery.counterup.js';
 
-// CountDownTimer
-
-var now = new Date();
-		var day = now.getDate();
-		var month = now.getMonth() + 1;
-		var year = now.getFullYear() + 1;
-		var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-		$('.countdown-timer').countdown({
-			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
-			offset: +2, // TODO Your Timezone Offset
-			day: 'День',
-			days: 'Дней',
-			hour: 'Час',
-			hours: 'Часа',
-		}, function () {
-			alert('Done!');
-		});
 
 // TABS
 
@@ -189,10 +177,81 @@ $('.sld').slick({
 });
 
 
-// PARALLAX INIT
+// REVEAL тоглер костылики
 
+
+
+
+
+ $(document).on('open.zf.reveal', function()
+  {
+	var burger = document.querySelector('.flatnav-rvl-burger__icon');
+	burger.classList.remove('icon-menu');
+	burger.classList.add('icon-cross2');
+
+  });
+
+ $(document).on('closed.zf.reveal', function()
+  {
+	var burger = document.querySelector('.flatnav-rvl-burger__icon');
+	burger.classList.remove('icon-cross2');
+	burger.classList.add('icon-menu');
+  });
+
+
+	// AIR Datepicker
+	//
+	var disabledDays = [0, 6];
+
+	$('.form__date').datepicker({
+	      autoClose: true,
+	    onRenderCell: function (date, cellType) {
+	        if (cellType == 'day') {
+	            var day = date.getDay(),
+	                isDisabled = disabledDays.indexOf(day) != -1;
+
+	            return {
+	                disabled: isDisabled
+	            }
+	        }
+	    }
+	})
+
+	$('.iconform__date').datepicker({
+	      autoClose: true,
+	    onRenderCell: function (date, cellType) {
+	        if (cellType == 'day') {
+	            var day = date.getDay(),
+	                isDisabled = disabledDays.indexOf(day) != -1;
+
+	            return {
+	                disabled: isDisabled
+	            }
+	        }
+	    }
+	})
+
+	$('.h-iconform__date').datepicker({
+	      autoClose: true,
+	    onRenderCell: function (date, cellType) {
+	        if (cellType == 'day') {
+	            var day = date.getDay(),
+	                isDisabled = disabledDays.indexOf(day) != -1;
+
+	            return {
+	                disabled: isDisabled
+	            }
+	        }
+	    }
+	})
+
+
+
+// ПИДОРАСИТ
+//
+// // PARALLAX INIT
+//
 $('.parallax-hero').parallax({imageSrc: '../assets/img/hero-bkg-01.jpg'});
-
 $('.parallax-container').parallax({imageSrc: '../assets/img/img__sqr__01.jpg'});
 
 // GALLERY
@@ -248,6 +307,8 @@ $('.knob-group').each( function( i, buttonGroup ) {
 });
 
 
+
+
 // LIGHTCASE gallery
 
 jQuery(document).ready(function($) {
@@ -259,52 +320,23 @@ jQuery(document).ready(function($) {
 });
 
 
+// CountDownTimer
 
-// AIR Datepicker
-
-var disabledDays = [0, 6];
-
-$('.form__date').datepicker({
-      autoClose: true,
-    onRenderCell: function (date, cellType) {
-        if (cellType == 'day') {
-            var day = date.getDay(),
-                isDisabled = disabledDays.indexOf(day) != -1;
-
-            return {
-                disabled: isDisabled
-            }
-        }
-    }
-})
-
-$('.iconform__date').datepicker({
-      autoClose: true,
-    onRenderCell: function (date, cellType) {
-        if (cellType == 'day') {
-            var day = date.getDay(),
-                isDisabled = disabledDays.indexOf(day) != -1;
-
-            return {
-                disabled: isDisabled
-            }
-        }
-    }
-})
-
-$('.h-iconform__date').datepicker({
-      autoClose: true,
-    onRenderCell: function (date, cellType) {
-        if (cellType == 'day') {
-            var day = date.getDay(),
-                isDisabled = disabledDays.indexOf(day) != -1;
-
-            return {
-                disabled: isDisabled
-            }
-        }
-    }
-})
+var now = new Date();
+		var day = now.getDate();
+		var month = now.getMonth() + 1;
+		var year = now.getFullYear() + 1;
+		var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+		$('.countdown-timer').countdown({
+			date: nextyear, // TODO Date format: 07/27/2017 17:00:00
+			offset: +2, // TODO Your Timezone Offset
+			day: 'День',
+			days: 'Дней',
+			hour: 'Час',
+			hours: 'Часа',
+		}, function () {
+			alert('Done!');
+		});
 
 
 
@@ -337,7 +369,14 @@ $('.count__number').counterUp({
   });
 
 
+	// VERTICAL Timeline
 
+	$('.vert-timeline').verticalTimeline({
+    startLeft: false,
+    alternate: true,
+    animate: "fade",
+    arrows: false
+});
 
 
 
