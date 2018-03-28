@@ -1,0 +1,27 @@
+.footer {
+  background: $black;
+  color: $light-gray;
+  padding: 3em 0;
+
+
+  &__contact-accent {
+    color: $primary-color;
+  }
+
+
+  &__contact-link {
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+
+
+// delete
+
+.fancy-accordion__title {
+  @include accordion-title;
+}

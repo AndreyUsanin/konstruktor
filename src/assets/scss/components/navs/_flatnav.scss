@@ -1,66 +1,75 @@
-$flatnav-height: 90px;
+.flatnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+  position: relative;
 
 
-#flatnav .flatnav {
+  @include breakpoint(small down) {
+    flex-direction: column;
+    display: block;
 
+    &--overlay {
+      position: absolute;
+      background: $white;
+      width: 100%;
+    }
+  }
 
-      &__item {
-            padding: 2em;
+  &__link {
+    padding: 2rem;
+    display: flex;
+    color: $black;
 
-            @include breakpoint (medium down) {
-              padding-left: 0;
-            }
+    &:hover, &:active, &:focus  {
+      color: $black;
+    }
 
-            &--last {
-              padding-right: 0;
-            }
-      }
-
-      &__link {
-            padding: 0;
-            font-size: 1.2em;
-            font-weight: bold;
-      }
-
+    @include breakpoint(small down) {
+      padding-left: 0;
+    }
+  }
 }
 
-.flatnav__mobile-wrp {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: $flatnav-height;
 
+.flatnav--right {
+  align-items: center;
 }
 
-
- .flatnav--right {
-      justify-content: flex-end;
- }
+.flatnav__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
 
 //flatnav-burger
 
 .flatnav-burger {
-      padding: 1em 0;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+    &__inner {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      width: 3em;
+      height: 3em;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 100%;
+    }
 
-
-      &__inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            width: 3em;
-            height: 3em;
-            background: $light-gray;
-            border: 1px solid $medium-gray;
-            border-radius: 100%;
-}
-
-            &__icon {
-                  font-size: 1em;
-                  color: $black;
-            }
+    &__icon {
+      font-size: 1em;
+      color: $black;
+    }
 
 }

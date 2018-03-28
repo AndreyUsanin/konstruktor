@@ -1,93 +1,56 @@
-.hero-slider {
-
-      height: 600px;
-
-      &__slideone {
-            background: url('../img/hero-bkg-01.jpg') no-repeat top center;
-		background-size: cover;
-            height: 600px;
-      	position: relative;
-      	z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-      }
-
-      &__slidetwo {
-            background: url('../img/hero-bkg-02.jpg') no-repeat top center;
-		background-size: cover;
-            height: 600px;
-      	position: relative;
-      	z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-
-}
-
-// SLICK
-
-
 
 .h-slider {
+    height: 600px;
 
-      height: 600px;
+  &__slideone {
+    background: url('../img/hero-bkg-01.jpg') no-repeat top center;
+    background-size: cover;
+    height: 600px;
+  }
 
-      &__slideone {
-            background: url('../img/hero-bkg-01.jpg') no-repeat top center;
-		background-size: cover;
-
-
-      }
-
-      &__slidetwo {
-            background: url('../img/hero-bkg-02.jpg') no-repeat top center;
-		background-size: cover;
-
-
-      }
-
-
+  &__slidetwo {
+  background: url('../img/hero-bkg-02.jpg') no-repeat top center;
+  background-size: cover;
+  height: 600px;
+  }
 }
 
 
 .slick-dots {
-      margin-top: -3em;
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      cursor: default;
+  margin-top: -3em;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: default;
 
-      li {
-            position: relative;
-            margin: 5px;
-            padding: 0;
-            margin-right: 0.5em;
+  li {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    margin-right: 0.5em;
 
-            button {
-                font-size: 0;
-                line-height: 0;
-                display: block;
-                width: 15px;
-                height: 15px;
-                cursor: pointer;
-                color: transparent;
-                border: 0;
-                outline: none;
-                background:$light-gray;
-                border-radius: 100%;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background:$light-gray;
+      border-radius: 100%;
 
-                &:hover {
-                      background: $primary-color;
-                }
-            }
-
-            &.slick-active button {
-                  background: $primary-color;
-            }
-
+      &:hover {
+        background: $primary-color;
       }
+    }
+
+  &.slick-active button {
+    background: $primary-color;
+  }
+
+  }
 
 }

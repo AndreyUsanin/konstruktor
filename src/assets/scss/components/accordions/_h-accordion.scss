@@ -1,0 +1,72 @@
+.h-accordion {
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 2em;
+  }
+
+  &__content {
+    background: $white;
+    border: 1px solid $light-gray;
+    border-top: none;
+    padding: 2em;
+  }
+
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background: $light-gray;
+    padding: 1em;
+    color: $black;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:active {
+      color: $black;
+    }
+
+
+    &:before {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      right: 1rem;
+      margin-top: -1em;
+      font-family: FontAwesome;
+      content: "\f067";
+      line-height: 0;
+      background: $white;
+      text-align: center;
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      color: $black;
+
+    }
+
+    &[aria-expanded="true"] {
+
+      color: $black;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        margin-top: -1em;
+        font-family: FontAwesome;
+        content: "\f068";
+      }
+
+    }
+  }
+}

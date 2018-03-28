@@ -1,17 +1,40 @@
-<ul class="socicon">
-      <li class="socicon__item">
-            <a href="#" class="socicon__link">
-                  <span class="socicon__icon icon-vk"></span>
+{{#ifequal type 'socicons'}}
+<ul class="socicons">
+      <li class="socicons__item">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon icon-vk"></span>
             </a>
       </li>
-      <li class="socicon__item">
-            <a href="#" class="socicon__link">
-                  <span class="socicon__icon icon-telegram"></span>
+      <li class="socicons__item">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon icon-telegram"></span>
             </a>
       </li>
-      <li class="socicon__item">
-            <a href="#" class="socicon__link">
-                  <span class="socicon__icon icon-facebook2"></span>
+      <li class="socicons__item">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon icon-facebook2"></span>
             </a>
       </li>
 </ul>
+{{/ifequal}}
+
+
+{{#ifequal type 'socicons--light'}}
+<ul class="socicons">
+      <li class="socicons__item socicons__item--light">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon socicons__icon--light icon-vk"></span>
+            </a>
+      </li>
+      <li class="socicons__item socicons__item--light">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon socicons__icon--light icon-telegram"></span>
+            </a>
+      </li>
+      <li class="socicons__item socicons__item--light">
+            <a href="#" class="socicons__link">
+                  <span class="socicons__icon socicons__icon--light icon-facebook2"></span>
+            </a>
+      </li>
+</ul>
+{{/ifequal}}

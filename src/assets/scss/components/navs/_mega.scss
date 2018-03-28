@@ -1,9 +1,11 @@
+$mega-height: 90px;
+
 // MAIN MENU
 #meganav .meganav {
 
       &__list-item {
 
-            padding: 2.2em;
+            padding: 2.3em;
 
             &:hover {
                   background: $medium-gray;
@@ -13,8 +15,6 @@
 
       &__link {
             color: $black;
-            text-transform: uppercase;
-            font-weight: bold;
             padding: 0;
             margin: 0;
       }
@@ -65,7 +65,11 @@
       }
 
       &__link {
+        color: $black;
 
+        &:hover {
+          color: $black;
+        }
       }
 }
 
@@ -76,7 +80,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: $flatnav-height;
+      min-height: $mega-height;
 
 }
 
@@ -130,7 +134,6 @@
             &--parrent {
                   padding: 2em;
                   font-weight: bold;
-                  font-size: 2em;
             }
       }
 
@@ -140,8 +143,16 @@
 
             &--parrent {
                   padding: 2em;
-                  font-size: 1.2em;
                   font-weight: bold;
+                  color: $black;
+
+                  &:hover {
+                    color: $black;
+                  }
+
+                  &:active {
+                    color: $black;
+                  }
             }
       }
 }

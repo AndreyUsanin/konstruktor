@@ -23,5 +23,7 @@ $section-margin: 5em;
 
 
 .test-header {
-      background: $light-gray;
+  border-bottom: 1px solid $black;
+  z-index: 9999;
+  background: transparent;
 }

@@ -379,6 +379,33 @@ $('.count__number').counterUp({
 });
 
 
+// H-ACCORDION
+
+
+// var options = {
+//
+// };
+
+
+var hAccordion = new Foundation.Accordion($('h-accordion'), {
+
+	// options не работают
+
+	slideSpeed: 3500,
+	multiExpand: true
+});
+
+// responsive MENU
+
+// 
+// var remenu = new Foundation.ResponsiveMenu($('remenu'), {
+// 	responsiveMenu: 'drilldown medium-dropdown'
+// });
+
+// var remenuToggle = new Foundation.ResponsiveToggle($('remenu__toggle'));
+
+
+
 
 
 $(document).foundation();

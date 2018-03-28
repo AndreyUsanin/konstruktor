@@ -18,7 +18,7 @@
         position: absolute;
         height: 100%;
         width: 4px;
-        background: #000;
+        background: $black;
         top: 0;
         bottom: 0;
         left: 0;
@@ -42,7 +42,7 @@
     right: 0;
     margin: 0 auto;
     border-radius: 50%;
-    background: #000;
+    background: $black;
 }
 
 .vtimeline-block {
@@ -59,7 +59,7 @@
         height: 0;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        border-left: 10px solid #eee;
+        border-left: 10px solid $light-gray;
         border-right: none;
     }
 }
@@ -84,7 +84,7 @@
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
         border-left: none;
-        border-right: 10px solid #eee;
+        border-right: 10px solid $light-gray;
     }
 }
 
@@ -95,7 +95,7 @@
 }
 
 .vtimeline-content {
-    background: #eee;
+    background: $light-gray;
     transition: 0.5s ease all;
 }
 
@@ -145,7 +145,7 @@
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
             border-left: none;
-            border-right: 10px solid #eee;
+            border-right: 10px solid $light-gray;
         }
     }
 
@@ -155,7 +155,7 @@
         top: 0;
         left: 0;
         right: auto;
-        background: #eee;
+        background: $light-gray;
     }
 
     .vtimeline-right {

@@ -12,7 +12,7 @@
 @import 'components/heroes/video-hero';
 //
 @import 'components/knobs/knob';
-@import 'components/titles/punch';
+// @import 'components/titles/punch';
 //
 //
 @import 'components/heroes/parallax-hero';
@@ -85,6 +85,14 @@
 //
 @import 'components/datepicker';
 
+// ACCORDIONS
+@import 'components/accordions/_h-accordion.scss';
+
 
 // TIMELINES
 @import 'components/timelines/vert-timeline';
+
+
+// footers
+@import 'components/footers/footer';
+@import 'components/footers/h-footer';
