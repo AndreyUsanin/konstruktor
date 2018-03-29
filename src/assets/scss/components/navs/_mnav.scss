@@ -76,13 +76,13 @@
 }
 
 
-//meganav-burger
+//mnav-burger
 
-.meganav__mobile-wrp {
+.mnav__wrp {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: $mega-height;
+      min-height: 80px;
 
 }
 
@@ -116,47 +116,13 @@
 
 // canvas
 
-#meganav-canvas {
+#mnav-canvas {
       background: $white;
       width: 300px;
       box-shadow: none;
       border-right: 1px solid $medium-gray;
 }
 
-// siidenav
-
-
-.meganav__side {
-
-
-      &__item {
-
-
-            &--parrent {
-                  padding: 2em;
-                  font-weight: bold;
-            }
-      }
-
-      &__link {
-
-            color: $black;
-
-            &--parrent {
-                  padding: 2em;
-                  font-weight: bold;
-                  color: $black;
-
-                  &:hover {
-                    color: $black;
-                  }
-
-                  &:active {
-                    color: $black;
-                  }
-            }
-      }
-}
 
 // fix offcanvas-wrapepr overlays dropsown pane
 
