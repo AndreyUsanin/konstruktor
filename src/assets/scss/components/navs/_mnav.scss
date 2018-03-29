@@ -1,0 +1,163 @@
+
+.mnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+  position: relative;
+
+
+  @include breakpoint(small down) {
+    flex-direction: column;
+    display: block;
+
+    &--overlay {
+      position: absolute;
+      background: $white;
+      width: 100%;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    padding: 2rem;
+    display: flex;
+    color: $black;
+
+    &:hover, &:active, &:focus  {
+      color: $black;
+    }
+
+    @include breakpoint(small down) {
+      padding-left: 0;
+    }
+  }
+
+    &__icon {
+      margin-right: 1em;
+      padding-top: 3px;
+    }
+}
+
+
+.mnav--right {
+  align-items: center;
+}
+
+.mnav__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+// DROPDOWN PANE
+
+
+
+.megamenu-pane {
+  z-index: 9999;
+  width: 100%;
+  height: auto;
+  background: $light-gray;
+  border-top: 1px solid $black;
+  margin: 0 auto !important;
+  left: 0% !important;
+  right: 0% !important;
+}
+
+
+//meganav-burger
+
+.meganav__mobile-wrp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: $mega-height;
+
+}
+
+
+.meganav-burger {
+      padding: 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      &__inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 3em;
+            height: 3em;
+            background: $light-gray;
+            border: 1px solid $medium-gray;
+            border-radius: 100%;
+}
+
+            &__icon {
+                  font-size: 1em;
+                  color: $black;
+            }
+
+}
+
+
+
+// canvas
+
+#meganav-canvas {
+      background: $white;
+      width: 300px;
+      box-shadow: none;
+      border-right: 1px solid $medium-gray;
+}
+
+// siidenav
+
+
+.meganav__side {
+
+
+      &__item {
+
+
+            &--parrent {
+                  padding: 2em;
+                  font-weight: bold;
+            }
+      }
+
+      &__link {
+
+            color: $black;
+
+            &--parrent {
+                  padding: 2em;
+                  font-weight: bold;
+                  color: $black;
+
+                  &:hover {
+                    color: $black;
+                  }
+
+                  &:active {
+                    color: $black;
+                  }
+            }
+      }
+}
+
+// fix offcanvas-wrapepr overlays dropsown pane
+
+.off-canvas-wrapper {
+       @include breakpoint(medium) {
+               overflow: visible;
+              }
+}

@@ -397,10 +397,11 @@ var hAccordion = new Foundation.Accordion($('h-accordion'), {
 
 // responsive MENU
 
-// 
-// var remenu = new Foundation.ResponsiveMenu($('remenu'), {
-// 	responsiveMenu: 'drilldown medium-dropdown'
-// });
+//
+var dnav = new Foundation.ResponsiveMenu($('#dnav'), {
+	// dataResponsiveMenu: 'accordion medium-dropdown',
+	// clickOpen: false
+});
 
 // var remenuToggle = new Foundation.ResponsiveToggle($('remenu__toggle'));
 

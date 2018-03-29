@@ -1,0 +1,99 @@
+.dnav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  // z-index: 9999;
+  position: relative;
+  flex-wrap: wrap;
+
+  @include breakpoint(small down) {
+    flex-direction: column;
+    display: block;
+
+    &--overlay {
+      position: absolute;
+      background: $white;
+      width: 100%;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    padding: 2rem;
+    display: flex;
+    color: $black;
+
+    &:hover, &:active, &:focus  {
+      color: $black;
+    }
+
+    @include breakpoint(small down) {
+      padding-left: 0;
+    }
+  }
+
+  &__sublink {
+    color: $black;
+
+    &:hover, &:active, &:focus  {
+      color: $black;
+    }
+  }
+}
+
+
+.dnav .submenu {
+  border: 1px solid $black;
+
+  @include breakpoint(small down) {
+    border: 0;
+  }
+}
+
+
+.dnav__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+//dnav-burger
+
+.dnav-burger {
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 3em;
+      height: 3em;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 100%;
+    }
+
+    &__icon {
+      font-size: 1em;
+      color: $black;
+    }
+
+}
+
+
+// header
+
+.dnav-header {
+  border-bottom: 1px solid $black;
+}
