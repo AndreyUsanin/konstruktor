@@ -1,0 +1,30 @@
+<!-- wrapper убирает горизонтальный скроллбар -->
+<div class="off-canvas-wrapper">
+<div class="off-canvas-content" data-off-canvas-content>
+      <header class="test-header">
+            <div class="grid-x">
+                  <div class="medium-2 small-12 cell">
+                        <div class="mnav__wrp">
+                              {{> logo type='logo'}}
+                              <div class="mnav-burger hide-for-medium">
+                                    <button class="mnav-burger__inner" type="button"  data-toggle="meganav-canvas">
+                                          <span class="mnav-burger__icon icon-menu"></span>
+                                    </button>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="medium-10 cell">
+                    <!-- MAIN MENU -->
+                      {{> mnav}}
+
+                    <!-- DROPDOWN PANE -->
+                    {{> mnav__pane}}
+
+                  </div>
+            </div>
+      </header>
+</div>
+
+<!-- OFFCANVAS -->
+
+</div>

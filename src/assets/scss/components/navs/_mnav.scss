@@ -29,8 +29,13 @@
     display: flex;
     color: $black;
 
+    @include breakpoint(small down) {
+      border-bottom: 1px solid $black;
+    }
+
     &:hover, &:active, &:focus  {
       color: $black;
+      outline: none;
     }
 
     @include breakpoint(small down) {
@@ -82,30 +87,29 @@
 }
 
 
-.meganav-burger {
-      padding: 1em 0;
+.mnav-burger {
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+    &__inner {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      width: 3em;
+      height: 3em;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 100%;
+    }
 
-
-      &__inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            width: 3em;
-            height: 3em;
-            background: $light-gray;
-            border: 1px solid $medium-gray;
-            border-radius: 100%;
-}
-
-            &__icon {
-                  font-size: 1em;
-                  color: $black;
-            }
-
+    &__icon {
+      font-size: 1em;
+      color: $black;
+    }
 }
 
 
