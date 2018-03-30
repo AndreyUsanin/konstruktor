@@ -1,0 +1,67 @@
+.vert-soc-area {
+  position: relative;
+  height: 400px;
+}
+
+.vert-soc {
+      margin: 0;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        width: 1px;
+        height: 100%;
+        margin-left: -0.5px;
+        background-color: $black;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        width: 1px;
+        height: 100%;
+        margin-left: -0.5px;
+        background-color: $black;
+      }
+
+      &__item {
+            list-style: none;
+            display: flex;
+            margin: .5rem 0;
+            border: 1px solid $black;
+            border-radius: 100px;
+
+            &--light {
+              border: 1px solid $white;
+            }
+      }
+
+      &__link {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            padding: .5rem;
+            align-items: center;
+            justify-content: center;
+      }
+
+      &__icon {
+            font-size: .8em;
+            color: $black;
+
+            &--light {
+              color: $white;
+            }
+      }
+}

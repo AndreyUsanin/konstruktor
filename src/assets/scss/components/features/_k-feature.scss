@@ -1,0 +1,19 @@
+.k-feature {
+  display: flex;
+  align-items: flex-start;
+  padding: 4rem;
+
+  &--boxone {  background: lighten($medium-gray, 20%);}
+  &--boxtwo {  background: lighten($medium-gray, 10%);}
+  &--boxthree {  background: $medium-gray;}
+
+
+  &__content {
+    padding-left: 2em;
+  }
+
+
+  &__icon {
+    font-size: 4em;
+  }
+}

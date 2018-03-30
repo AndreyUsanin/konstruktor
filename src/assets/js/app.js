@@ -75,11 +75,25 @@ if ($(".na-tabs")[0]){
 
 // SLICK-HERO
 
+$('.hero-slider').slick({
+	dots: false,
+	arrows: true,
+	autoplay: true,
+	appendDots: '.hero-slider__dots',
+  appendArrows: '.hero-slider__nav',
+	prevArrow: '<button type="button" class="hero-slider__nav-left"><i class="fas fa-arrow-left hero-slider__icon"></i></button>',
+	nextArrow: '<button type="button" class="hero-slider__nav-right"><i class="fas fa-arrow-right hero-slider__icon"></i></button>',
 
-$('.single-item').slick({
-    dots: true,
-    arrows: false,
-   autoplay: true
+	responsive: [
+	{
+		breakpoint: 960,
+		settings: {
+			arrows: false,
+			dots: true
+		}
+	},
+
+]
 });
 
 // PROMO Slider
