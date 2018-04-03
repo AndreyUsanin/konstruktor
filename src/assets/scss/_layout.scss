@@ -1,5 +1,10 @@
 $section-margin: 5em;
 
+
+
+body {
+  height: 100%;
+}
 .main-header {
       background: $light-gray;
 }
@@ -26,11 +31,4 @@ $section-margin: 5em;
   border-bottom: 1px solid $black;
   z-index: 9999;
   background: transparent;
-}
-
-
-// DELETE
-
-#hourglass {
-  font-size: 3em;
 }

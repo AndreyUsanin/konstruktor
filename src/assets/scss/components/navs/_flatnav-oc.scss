@@ -1,3 +1,5 @@
+$flatnav-oc-height: 90px;
+
 .flatnav-oc {
   list-style: none;
   padding: 0;
@@ -8,6 +10,33 @@
 
   @include breakpoint(small down) {
     flex-direction: column;
+  }
+
+  &__header {
+    height: $flatnav-oc-height;
+    padding: 0 2em;
+    background: transparent;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $flatnav-oc-height;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: $flatnav-oc-height;
+  }
+
+  &__knobs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: $flatnav-oc-height;
   }
 
   &__link {
@@ -26,18 +55,6 @@
 }
 
 
- .flatnav-oc__wrp {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 90px;
-}
-
-
- .flatnav-oc--right {
-  justify-content: flex-end;
- }
-
 //flatnav-burger
 
   .flatnav-oc-burger {
@@ -46,7 +63,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1em;
 
     &__inner {
       display: flex;
@@ -65,6 +81,13 @@
       color: $black;
     }
 
+    &__knobs {
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
   }
 
 
@@ -74,5 +97,12 @@
   background: $white;
   width: 300px;
   box-shadow: none;
-  border-right: 1px solid $black;
+  border-left: 1px solid $black;
+}
+
+
+.flatnav-oc__header.is-stuck {
+  background: $white;
+  box-shadow: 0 16px 56px 0 rgba(0,0,0,0.1);
+  transition: ease .5s;
 }

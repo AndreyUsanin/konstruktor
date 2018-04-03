@@ -1,3 +1,4 @@
+$mnav-height: 90px;
 
 .mnav {
   list-style: none;
@@ -18,6 +19,37 @@
       background: $white;
       width: 100%;
     }
+  }
+
+  &__header {
+    padding: 0 2em;
+    background: transparent;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $mnav-height;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: $mnav-height;
+
+    @include breakpoint (medium down) {
+      height: auto;
+      justify-content: flex-start;
+    }
+  }
+
+  &__knobs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: $mnav-height;
   }
 
   &__item {
@@ -50,16 +82,7 @@
 }
 
 
-.mnav--right {
-  align-items: center;
-}
 
-.mnav__wrp {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 90px;
-}
 // DROPDOWN PANE
 
 
@@ -78,13 +101,6 @@
 
 //mnav-burger
 
-.mnav__wrp {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 80px;
-
-}
 
 
 .mnav-burger {

@@ -1,63 +1,55 @@
-<!-- FLATNAV-OC ORIGIN -->
-<!-- <ul id="flatnav-oc" class="flatnav-oc flatnav-oc--right menu  show-for-medium">
-      <li class="flatnav-oc__item">
-            <a class="flatnav-oc__link" href="#">Home</a>
-      </li>
-      <li class="flatnav-oc__item">
-            <a class="flatnav-oc__link" href="#">Services</a>
-      </li>
-      <li class="flatnav-oc__item">
-            <a class="flatnav-oc__link" href="#">Process</a>
-      </li>
-      <li class="flatnav-oc__item">
-            <a class="flatnav-oc__link"  href="#">Portfolio</a>
-      </li>
-</ul> -->
-
-<!-- wrapper убирает горизонтальный скроллбар -->
-
 <div class="off-canvas-wrapper">
-      <div class="off-canvas-content" data-off-canvas-content>
-            <header class="test-header">
-                  <div class="grid-x">
-                        <div class="medium-2 small-12 cell">
-                              <div class="flatnav-oc__wrp">
-                                    <div class="flatnav-oc-burger hide-for-medium">
-                                          <div class="flatnav-oc-burger__inner" data-toggle="flatnav-oc-canvas">
-                                                <span class="flatnav-oc-burger__icon icon-menu"></span>
-                                          </div>
-                                    </div>
-                                    {{> logo type='logo'}}
-                              </div>
-                        </div>
-                        <div class="medium-10 cell">
-                          <!-- FLATNAV-OC ORIGIN                     -->
-                          <ul id="flatnav-oc" class="flatnav-oc show-for-medium">
-                            <li><a class="flatnav-oc__link" href="">Home</a></li>
-                            <li><a class="flatnav-oc__link"  href="">Services</a></li>
-                            <li><a class="flatnav-oc__link"  href="">Process</a></li>
-                            <li><a class="flatnav-oc__link"  href="">Porfolio</a></li>
-                          </ul>
-                        </div>
-                  </div>
-            </header>
-      </div>
-
-
-      <div class="off-canvas position-left" id="flatnav-oc-canvas" data-off-canvas>
-            <ul id="flatnav-oc" class="flatnav-oc flatnav-oc--right vertical menu">
-                  <li class="flatnav-oc__item">
-                        <a class="flatnav-oc__link" href="#">Home</a>
-                  </li>
-                  <li class="flatnav-oc__item">
-                        <a class="flatnav-oc__link" href="#">Services</a>
-                  </li>
-                  <li class="flatnav-oc__item">
-                        <a class="flatnav-oc__link" href="#">Process</a>
-                  </li>
-                  <li class="flatnav-oc__item">
-                        <a class="flatnav-oc__link"  href="#">Portfolio</a>
-                  </li>
+  <div class="off-canvas-content" data-off-canvas-content data-sticky-container>
+    <header class="flatnav-oc__header sticky" data-sticky data-margin-top="0">
+      <div class="grid-x">
+        <div class="medium-3 small-12 cell">
+          <div class="flatnav-oc__logo">
+              {{> logo type='logo'}}
+              <div class="flatnav-oc-burger hide-for-medium">
+                <div class="flatnav-oc-burger__inner" data-toggle="flatnav-oc-canvas">
+                      <span class="flatnav-oc-burger__icon icon-menu"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="medium-6 cell">
+          <div class="flatnav-oc__nav">
+          <!-- FLATNAV-OC ORIGIN                     -->
+            <ul id="flatnav-oc" class="flatnav-oc show-for-medium">
+              <li><a class="flatnav-oc__link" href="">Home</a></li>
+              <li><a class="flatnav-oc__link"  href="">About Us</a></li>
+              <li><a class="flatnav-oc__link"  href="">Services</a></li>
+              <li><a class="flatnav-oc__link"  href="">Pricing</a></li>
+              <li><a class="flatnav-oc__link"  href="">Blog</a></li>
+              <li><a class="flatnav-oc__link"  href="">Portfolio</a></li>
             </ul>
+          </div>
+        </div>
+        <div class="medium-3 cell">
+          <div class="flatnav-oc__knobs show-for-medium">
+              <a class="knob">Login</a>
+              <a class="knob">Signup</a>
+          </div>
+        </div>
       </div>
+    </header>
+  </div>
+
+    <!-- offcanvas -->
+<div class="off-canvas position-right" id="flatnav-oc-canvas" data-off-canvas data-transition="overlap">
+  <ul id="flatnav-oc" class="flatnav-oc flatnav-oc--right vertical menu">
+    <li class="flatnav-oc__item">
+      <a class="flatnav-oc__link" href="#">Home</a>
+    </li>
+    <li class="flatnav-oc__item">
+      <a class="flatnav-oc__link" href="#">Services</a>
+    </li>
+    <li class="flatnav-oc__item">
+      <a class="flatnav-oc__link" href="#">Process</a>
+    </li>
+    <li class="flatnav-oc__item">
+      <a class="flatnav-oc__link"  href="#">Portfolio</a>
+    </li>
+  </ul>
+</div>
 </div>

@@ -1,23 +1,8 @@
-<!-- DNAV ORIGIN -->
-<!-- <ul id="dnav" class="dnav menu" data-responsive-menu="accordion medium-dropdown" data-auto-height="true" data-animate-height="true">
-  <li class="dnav__item"><a class="dnav__link" href="">Home</a></li>
-  <li class="dnav__item">
-    <a class="dnav__link" href="#">Services</a>
-    <ul class="menu">
-      <li class="dnav__item"><a class="dnav__sublink" href="#">Felatio</a></li>
-      <li class="dnav__item"><a class="dnav__sublink" href="#">Creamy Felatio</a></li>
-    </ul>
-  </li>
-  <li class="dnav__item"><a class="dnav__link"  href="">Process</a></li>
-  <li class="dnav__item"><a class="dnav__link"  href="">Porfolio</a></li>
-</ul> -->
-
-
 {{#ifequal type 'dnav'}}
-<header class="dnav-header">
+<header class="dnav__header">
   <div class="grid-x">
     <div class="medium-2 small-12 cell">
-      <div class="dnav__wrp">
+      <div class="dnav__logo">
         {{> logo type='logo'}}
         <div class="dnav-burger" data-responsive-toggle="dnav">
           <button class="dnav-burger__inner hide-for-medium" type="button" data-toggle>
@@ -26,20 +11,28 @@
         </div>
       </div>
     </div>
-    <div class="medium-10 cell">
+    <div class="medium-8 cell">
       <!-- DNAV ORIGIN -->
-      <ul id="dnav" class="dnav menu" data-responsive-menu="accordion medium-dropdown" data-auto-height="true" data-animate-height="true">
-        <li class="dnav__item"><a class="dnav__link" href="">Home</a></li>
-        <li class="dnav__item">
-          <a class="dnav__link" href="#">Services</a>
-          <ul class="menu">
-            <li class="dnav__item"><a class="dnav__sublink" href="#">Felatio</a></li>
-            <li class="dnav__item"><a class="dnav__sublink" href="#">Creamy Felatio</a></li>
-          </ul>
-        </li>
-        <li class="dnav__item"><a class="dnav__link"  href="">Process</a></li>
-        <li class="dnav__item"><a class="dnav__link"  href="">Porfolio</a></li>
-      </ul>
+      <div class="dnav__nav">
+        <ul id="dnav" class="dnav menu" data-responsive-menu="accordion medium-dropdown" data-auto-height="true" data-animate-height="true">
+          <li class="dnav__item"><a class="dnav__link" href="">Home</a></li>
+          <li class="dnav__item">
+            <a class="dnav__link" href="#">Services</a>
+            <ul class="menu">
+              <li class="dnav__item"><a class="dnav__sublink" href="#">Felatio</a></li>
+              <li class="dnav__item"><a class="dnav__sublink" href="#">Creamy Felatio</a></li>
+            </ul>
+          </li>
+          <li class="dnav__item"><a class="dnav__link"  href="">Process</a></li>
+          <li class="dnav__item"><a class="dnav__link"  href="">Porfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="medium-2 cell show-for-medium">
+      <div class="flatnav__knobs">
+        <a class="knob">Login</a>
+        <a class="knob">Signup</a>
+      </div>
     </div>
   </div>
 </header>
@@ -47,10 +40,10 @@
 
 
 {{#ifequal type 'dnav--overlay'}}
-<header class="dnav-header">
+<header class="dnav__header">
   <div class="grid-x">
     <div class="medium-2 small-12 cell">
-      <div class="dnav__wrp">
+      <div class="dnav__logo">
         {{> logo type='logo'}}
         <div class="dnav-burger" data-responsive-toggle="dnav">
           <button class="dnav-burger__inner hide-for-medium" type="button" data-toggle>
@@ -59,20 +52,28 @@
         </div>
       </div>
     </div>
-    <div class="medium-10 cell">
+    <div class="medium-8 cell">
       <!-- DNAV ORIGIN -->
-      <ul id="dnav" class="dnav dnav--overlay menu" data-responsive-menu="accordion medium-dropdown" data-auto-height="true" data-animate-height="true">
-        <li class="dnav__item"><a class="dnav__link" href="">Home</a></li>
-        <li class="dnav__item">
-          <a class="dnav__link" href="#">Services</a>
-          <ul class="menu">
-            <li class="dnav__item"><a class="dnav__sublink" href="#">Felatio</a></li>
-            <li class="dnav__item"><a class="dnav__sublink" href="#">Creamy Felatio</a></li>
-          </ul>
-        </li>
-        <li class="dnav__item"><a class="dnav__link"  href="">Process</a></li>
-        <li class="dnav__item"><a class="dnav__link"  href="">Porfolio</a></li>
-      </ul>
+      <div class="dnav__nav  dnav--overlay">
+        <ul id="dnav" class="dnav menu" data-responsive-menu="accordion medium-dropdown" data-auto-height="true" data-animate-height="true">
+          <li class="dnav__item"><a class="dnav__link" href="">Home</a></li>
+          <li class="dnav__item">
+            <a class="dnav__link" href="#">Services</a>
+            <ul class="menu">
+              <li class="dnav__item"><a class="dnav__sublink" href="#">Felatio</a></li>
+              <li class="dnav__item"><a class="dnav__sublink" href="#">Creamy Felatio</a></li>
+            </ul>
+          </li>
+          <li class="dnav__item"><a class="dnav__link"  href="">Process</a></li>
+          <li class="dnav__item"><a class="dnav__link"  href="">Porfolio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="medium-2 cell show-for-medium">
+      <div class="flatnav__knobs">
+        <a class="knob">Login</a>
+        <a class="knob">Signup</a>
+      </div>
     </div>
   </div>
 </header>

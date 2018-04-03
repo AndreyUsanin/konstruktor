@@ -1,9 +1,9 @@
 {{#ifequal type 'flatnav'}}
-<header class="test-header">
+<header class="flatnav__header">
   <div class="container-fluid">
     <div class="grid-x">
       <div class="medium-2 small-12 cell">
-        <div class="flatnav__wrp">
+        <div class="flatnav__logo">
           {{> logo type='logo'}}
           <div class="flatnav-burger"  data-responsive-toggle="flatnav">
             <button class="flatnav-burger__inner hide-for-medium"  type="button" data-toggle>
@@ -12,13 +12,21 @@
           </div>
         </div>
       </div>
-      <div class="medium-10 cell">
+      <div class="medium-8 cell">
+        <div class="flatnav__nav">
         <ul id="flatnav" class="flatnav">
           <li><a class="flatnav__link" href="">Home</a></li>
           <li><a class="flatnav__link"  href="">Services</a></li>
           <li><a class="flatnav__link"  href="">Process</a></li>
           <li><a class="flatnav__link"  href="">Porfolio</a></li>
         </ul>
+        </div>
+      </div>
+      <div class="medium-2 cell show-for-medium">
+        <div class="flatnav__knobs">
+          <a class="knob">Login</a>
+          <a class="knob">Signup</a>
+        </div>
       </div>
     </div>
   </div>
@@ -26,11 +34,11 @@
 {{/ifequal}}
 
 {{#ifequal type 'flatnav--overlay'}}
-<header class="test-header">
+<header class="flatnav__header">
   <div class="container-fluid">
     <div class="grid-x">
       <div class="medium-2 small-12 cell">
-        <div class="flatnav__wrp">
+        <div class="flatnav__logo">
           {{> logo type='logo'}}
           <div class="flatnav-burger"  data-responsive-toggle="flatnav">
             <button class="flatnav-burger__inner hide-for-medium"  type="button" data-toggle>
@@ -39,13 +47,21 @@
           </div>
         </div>
       </div>
-      <div class="medium-10 cell">
+      <div class="medium-8 cell">
+        <div class="flatnav__nav">
         <ul id="flatnav" class="flatnav flatnav--overlay">
           <li><a class="flatnav__link" href="">Home</a></li>
           <li><a class="flatnav__link"  href="">Services</a></li>
           <li><a class="flatnav__link"  href="">Process</a></li>
           <li><a class="flatnav__link"  href="">Porfolio</a></li>
         </ul>
+        </div>
+      </div>
+      <div class="medium-2 cell">
+        <div class="flatnav__knobs show-for-medium">
+          <a class="knob">Login</a>
+          <a class="knob">Signup</a>
+        </div>
       </div>
     </div>
   </div>

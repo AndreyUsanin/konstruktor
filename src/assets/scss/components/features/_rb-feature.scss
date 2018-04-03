@@ -1,0 +1,46 @@
+.rb-feature {
+
+  &__area {
+    background: $light-gray;
+    padding: 4em 0;
+  }
+
+  &__inner {
+    background: $white;
+    padding: 2em;
+    border-radius: 5px;
+    border-bottom: 7px solid transparent;
+    border-color: $black;
+    box-shadow: 0 16px 56px 0 rgba(0,0,0,0.1);
+
+  }
+
+  &__title {
+    margin-top: 0.5em;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    position: relative;
+
+
+    &::before {
+      z-index: 2;
+      position: relative;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 2.6rem;
+      height: 2.6rem;
+      background-color: $medium-gray;
+      opacity: 0.9;
+      left: -8px;
+      bottom: -8px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+}

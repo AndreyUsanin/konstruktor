@@ -1,0 +1,20 @@
+
+/* ---- particles.js container ---- */
+
+.particles-js-area {
+  background: $dark-gray;
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+  z-index: 2;
+}
+
+#particles-js {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}

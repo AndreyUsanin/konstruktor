@@ -1,3 +1,5 @@
+$flatnav-rvl-height: 90px;
+
 .flatnav-rvl {
   list-style: none;
   padding: 0;
@@ -9,6 +11,34 @@
   @include breakpoint(small down) {
     flex-direction: column;
   }
+
+
+    &__header {
+      height: $flatnav-rvl-height;
+      padding: 0 2em;
+      background: transparent;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: $flatnav-rvl-height;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: $flatnav-rvl-height;
+    }
+
+    &__knobs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: $flatnav-rvl-height;
+    }
 
   &__link {
     padding: 2rem;
@@ -25,20 +55,6 @@
   }
 }
 
-
-
-.flatnav-rvl__wrp {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90px;
-}
-
-
-.flatnav-rvl--right {
-  justify-content: flex-end;
-}
-
 //flatnav-burger
 
 .flatnav-rvl-burger {
@@ -47,7 +63,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1em;
   z-index: 150;
 
     &__inner {

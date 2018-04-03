@@ -1,10 +1,11 @@
+$dnav-height: 90px;
+
 .dnav {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  // z-index: 9999;
   position: relative;
   flex-wrap: wrap;
 
@@ -15,9 +16,44 @@
     &--overlay {
       position: absolute;
       background: $white;
-      width: 100%;
+      width: 100vh;
+      height: auto;
+      justify-content: flex-start;
     }
   }
+
+
+    &__header {
+      padding: 0 2em;
+      background: transparent;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: $dnav-height;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: $dnav-height;
+      position: relative;
+
+      @include breakpoint (medium down) {
+        height: auto;
+        justify-content: flex-start;
+      }
+    }
+
+    &__knobs {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: $dnav-height;
+    }
 
   &__item {
 
@@ -56,12 +92,6 @@
 }
 
 
-.dnav__wrp {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-}
 
 //dnav-burger
 
