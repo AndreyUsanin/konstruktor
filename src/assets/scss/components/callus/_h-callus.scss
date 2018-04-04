@@ -1,0 +1,28 @@
+.h-callus-area {
+    background: $black;
+    color: $white;
+    padding: 2em;
+}
+
+.h-callus {
+  display: flex;
+  justify-content: center;
+
+
+  &__iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid $white;
+    padding: 2em;
+    margin-right: 2em;
+  }
+
+  &__icon {
+      font-size: 4em;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+}
