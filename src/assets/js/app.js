@@ -31,7 +31,7 @@ import slick from 'slick-carousel';
 
 var particles = document.getElementById('particles-js');
 if (particles) {
-var particlesJS = require('../../../node_modules/particles.js/particles.js');
+var particlesJS = require('./vendors/particles.js');
 var particlesJS = window.particlesJS;
 
 /* ---- particles.js config ---- */
