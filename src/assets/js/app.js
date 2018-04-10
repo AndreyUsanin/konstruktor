@@ -222,6 +222,8 @@ $('.hero-slider').slick({
 ]
 });
 
+
+
 // PROMO Slider
 
 $('.promo-slider').slick({

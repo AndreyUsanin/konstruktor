@@ -4,6 +4,9 @@ $section-margin: 5em;
 
 body {
   height: 100%;
+
+  // fix for blocky-slider
+  overflow-x: hidden;
 }
 .main-header {
       background: $light-gray;
