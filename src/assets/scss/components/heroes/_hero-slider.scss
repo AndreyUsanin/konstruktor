@@ -54,16 +54,22 @@ $hero-slider-height: 600px;
   }
 
   &__title {
-    font-size: 4em;
-    color: $white;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
 
-  &__nav {
+  &__utp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  &__utp-title {
+    font-size: 8em;
+    font-weight: bold;
+  }
+
+  &__utp-small {
+    font-size: 1.2em;
   }
 
 
@@ -102,7 +108,10 @@ $hero-slider-height: 600px;
 // DOTS
 
 .hero-slider__dots {
-  margin-top: -3em;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   list-style: none;
@@ -132,12 +141,12 @@ $hero-slider-height: 600px;
       background:$light-gray;
 
       &:hover {
-        background: $black;
+        background: $primary-color;
       }
     }
 
   &.slick-active button {
-    background: $black;
+    background: $primary-color;
   }
 
   }

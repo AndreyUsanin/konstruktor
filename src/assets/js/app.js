@@ -196,6 +196,18 @@ if ($(".na-tabs")[0]){
 }
 
 
+// VERT-TABS
+
+if ($(".vert-tabs")[0]){
+	var target = document.getElementById("vert-tabs");
+	var options = {
+	  "linkClass": "vert-tabs__item"
+	};
+
+	var elem = new Foundation.Tabs($(target), options);
+}
+
+
 
 // SLICK-SLIDER
 
@@ -278,6 +290,51 @@ $('.slider-nav').slick({
 
 });
 
+// SLICK-Sync
+
+$('.slick-gallery').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slick-gallery__nav'
+});
+
+$('.slick-gallery__nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slick-gallery',
+  dots: false,
+    arrows: false,
+  // centerMode: true,
+  focusOnSelect: true,
+
+
+  responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        dots: false
+      }
+
+    }, {
+
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+
+    }]
+
+});
+
 // SLIDER RENAME IT
 
 $('.sld').slick({
@@ -318,27 +375,16 @@ $('.sld').slick({
   ]
 });
 
+// slick testimonials
 
-// REVEAL тоглер костылики
+$('.testimonials').slick({
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		appendDots: '.testimonials__dots',
+});
 
 
-
-
-
- $(document).on('open.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-menu');
-	burger.classList.add('icon-cross2');
-
-  });
-
- $(document).on('closed.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-cross2');
-	burger.classList.add('icon-menu');
-  });
 
 
 	// AIR Datepicker
@@ -491,24 +537,20 @@ $('.count__number').counterUp({
 
 // REVEAL тоглер костылики
 
-
-
-
-
- $(document).on('open.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-menu');
-	burger.classList.add('icon-cross2');
-
-  });
-
- $(document).on('closed.zf.reveal', function()
-  {
-	var burger = document.querySelector('.flatnav-rvl-burger__icon');
-	burger.classList.remove('icon-cross2');
-	burger.classList.add('icon-menu');
-  });
+ // $(document).on('open.zf.reveal', function()
+ //  {
+	// var burger = document.querySelector('.flatnav-rvl-burger__icon');
+	// burger.classList.remove('icon-menu');
+	// burger.classList.add('icon-cross2');
+ //
+ //  });
+ //
+ // $(document).on('closed.zf.reveal', function()
+ //  {
+	// var burger = document.querySelector('.flatnav-rvl-burger__icon');
+	// burger.classList.remove('icon-cross2');
+	// burger.classList.add('icon-menu');
+ //  });
 
 
 	// VERTICAL Timeline
@@ -520,6 +562,11 @@ $('.count__number').counterUp({
     arrows: false
 });
 
+
+// modal
+
+var mainmodal = new Foundation.Reveal($('#mainmodal'), options);
+var options = {fullScreen: false, resetOnClose: true};
 
 // H-ACCORDION
 

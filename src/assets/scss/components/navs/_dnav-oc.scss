@@ -1,4 +1,4 @@
-$dnav-oc-height: 90px;
+$dnav-oc-height: 80px;
 
 .dnav-oc {
   list-style: none;
@@ -8,86 +8,90 @@ $dnav-oc-height: 90px;
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
-  width: 100%;
 
-  @include breakpoint(small down) {
+
+  @include breakpoint(medium down) {
     flex-direction: column;
-    display: block;
+    width: 100%;
   }
 
 
-    &__header {
-      padding: 0 2em;
-      background: transparent;
-    }
+  &__header {
+    padding: 0 2em;
+    background: $primary-color;
+  }
 
-    &__logo {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: $dnav-oc-height;
-    }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $dnav-oc-height;
+  }
 
-    &__nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      position: relative;
-      border: 1px solid $light-gray;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
 
-      @include breakpoint (medium down) {
-        height: auto;
-        justify-content: flex-start;
-      }
+    @include breakpoint (medium down) {
+      height: auto;
+      justify-content: flex-start;
     }
+  }
 
-    &__knobs {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      height: $dnav-oc-height;
-    }
+  &__knobs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: $dnav-oc-height;
+  }
 
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1 0 auto;
-          flex-direction: column;
-    // cursor: pointer;
+    flex-direction: column;
+
+
+  @include breakpoint(medium down) {
+    border-bottom: 1px solid $white;
+  }
 
     &:hover {
-      background: $light-gray;
-    }
-
-    @include breakpoint (large down) {
 
     }
+
   }
 
   &__subitem {
     display: flex;
 
     &:hover {
-      background: darken($light-gray, 20%);
+
     }
   }
 
   &__link {
-
     display: flex;
-    color: $black;
-    width: 100%;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100% !important;
     height: 100%;
     text-align: center;
-    padding: 2em !important;
+
+    font-size: 0.9em;
 
     &:hover, &:active, &:focus  {
-      color: $black;
+      color: $white;
     }
+
     .accordion-menu &__link {
       text-align: left;
     }
+
 
   }
 
@@ -98,6 +102,7 @@ $dnav-oc-height: 90px;
     height: 100%;
     text-align: left;
     padding: 2em !important;
+    border-bottom: 1px solid $light-gray;
 
 
     &:hover, &:active, &:focus  {
@@ -108,10 +113,10 @@ $dnav-oc-height: 90px;
 
 
 .dnav-oc .submenu {
-width: 100%;
+  width: 100%;
+  background: $white;
 
 }
-
 
 //dnav-oc-burger
 
@@ -122,22 +127,20 @@ width: 100%;
   justify-content: center;
   z-index: 9999;
 
-    &__inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      width: 3em;
-      height: 3em;
-      background: $white;
-      border: 1px solid $black;
-      border-radius: 100%;
-    }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+  }
 
-    &__icon {
-      font-size: 1em;
-      color: $black;
-    }
+  &__icon {
+    font-size: 2em;
+    color: $white;
+  }
 
 }
 
@@ -160,11 +163,10 @@ width: 100%;
 }
 
 #dnav-oc-canvas {
-  background: $white;
-  width: 350px;
+  background: $primary-color;
+
   box-shadow: none;
-  border-left: 1px solid $black;
-  overflow: visible;
+
 }
 
 #dnav-oc-canvas .dnav-oc__link {
@@ -190,4 +192,26 @@ width: 100%;
 
 .dnav-oc-header {
   border-bottom: 1px solid $black;
+}
+
+// current
+
+.dnav-oc {
+
+  &__list {
+    margin: 0;
+    padding: 3em 0;
+    list-style: none;
+    align-self: flex-end;
+  }
+
+  &__list-item {
+    padding: 1em;
+    color: $medium-gray;
+  }
+
+  &__icon {
+    color: $white;
+    margin-right: 1em;
+  }
 }

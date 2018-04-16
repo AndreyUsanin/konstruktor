@@ -1,53 +1,56 @@
 .li-feature {
 
-      &__inner {
-            padding: 2em;
-            background: lighten($light-gray, 5%);
-      }
+  &:nth-child(1) {
+  }
 
-      &__header {
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-      }
+  &__inner {
+    padding: 2em;
+    display: flex;
+    background: lighten($light-gray, 5%);
+    margin: 1em;
+  }
 
-      &__content {
-            text-align: left;
-      }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
 
-      &__footer {
-            text-align: left;
-      }
+  &__content {
+    text-align: left;
+    padding-left: 1em;
+  }
 
-      &__iconbox {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: $secondary-color;
-            border-radius: 100%;
-            width: 4em;
-            height: 4em;
-            flex-shrink: 1;
-      }
+  &__footer {
+    text-align: left;
+  }
 
-      &__icon {
-            font-size: 1.5em;
-            color: $white;
-      }
+  &__iconbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-shrink: 1;
+    padding-right: 1em;
+    border-right: 2px solid $primary-color;
+  }
 
-      &__title {
-            font-size: 22px;
-            padding-top: 1em;
-            font-weight: bold;
-      }
+  &__icon {
+    font-size: 3em;
+    color: $primary-color;
+  }
 
-      &__info {
-            color: $dark-gray;
-            padding: 1em 0;
-            display: block;
-      }
+  &__title {
+    font-weight: bold;
+  }
 
-      &__button {
-            background: $dark-gray;
-      }
+  &__info {
+    color: $dark-gray;
+    padding: 1em 0;
+    display: block;
+  }
+
+  &__button {
+    background: $dark-gray;
+  }
 }

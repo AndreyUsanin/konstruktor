@@ -1,9 +1,17 @@
 .mg-card {
   text-align: center;
+  box-shadow: $global-box-shadow;
 
   &:hover .mg-card__inner  {
-    background: $dark-gray;
+    background: $primary-color;
     color: $white;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover .mg-card__arrow {
+    color: $white;
+    transition: all 0.3s ease-out;
+    transform: translateX(1em);
   }
 
   &:hover .br-card__list  {
@@ -11,14 +19,15 @@
   }
 
   &__inner {
+    cursor: pointer;
     background: $white;
     padding: 2em;
     border-radius: 5px;
     border: 1px solid $light-gray;
+    transition: all 0.3s ease-out;
   }
 
   &__header {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +39,7 @@
     width: 8em;
     height: 8em;
     border-radius: 50%;
-    border: 4px solid $dark-gray;
+    border: 4px solid $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +47,15 @@
 
   &__icon {
     font-size: 5em;
-    color: $dark-gray;
+    color: $primary-color;
+  }
+
+  &__arrow {
+    padding-top: 1em;
+    color: $primary-color;
+    display: block;
+    transition: all 0.3s ease-out;
+    opacity: 0.7;
   }
 
   &__title {

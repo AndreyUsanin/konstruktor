@@ -1,22 +1,22 @@
 {{#ifequal type 'feature'}}
 {{#each global.feature}}
 <div class="medium-4 cell">
-      <div class="feature">
-            <div class="feature__inner">
-                  <div class="feature__header">
-                        <div class="feature__iconbox">
-                              <span class="feature__icon {{icon}}"></span>
-                        </div>
-                        <h3 class="feature__title">{{title}}</h3>
-                  </div>
-                  <div class="feature__content">
-                        <span class="feature__info">{{info}}</span>
-                  </div>
-                  <div class="feature__footer">
-                        {{> knob type='knob'}}
-                  </div>
-            </div>
+  <div class="feature">
+    <div class="feature__inner">
+      <div class="feature__header">
+        <div class="feature__iconbox">
+          <span class="feature__icon {{icon}}"></span>
+        </div>
+        <h3 class="feature__title">{{title}}</h3>
       </div>
+      <div class="feature__content">
+        <span class="feature__info">{{info}}</span>
+      </div>
+      <div class="feature__footer">
+        {{> knob type='knob'}}
+      </div>
+    </div>
+  </div>
 </div>
 {{/each}}
 {{/ifequal}}
@@ -25,44 +25,331 @@
 {{#ifequal type 'h-feature'}}
 {{#each global.feature}}
 <div class="medium-4 cell">
-      <div class="h-feature">
-            <div class="h-feature__inner">
-                  <div class="h-feature__header">
-                        <div class="h-feature__iconbox">
-                              <span class="h-feature__icon {{icon}}"></span>
-                        </div>
-                        <span class="h-feature__number">{{numberz}}</span>
-                  </div>
-                  <div class="h-feature__content">
-                        <h3 class="h-feature__title">{{title}}</h3>
-                        <span class="h-feature__info">{{info}}</span>
-                  </div>
-            </div>
+  <div class="h-feature">
+    <div class="h-feature__inner">
+      <div class="h-feature__header">
+        <div class="h-feature__iconbox">
+          <span class="h-feature__icon {{icon}}"></span>
+        </div>
+        <span class="h-feature__number">{{numberz}}</span>
       </div>
+      <div class="h-feature__content">
+        <h3 class="h-feature__title">{{title}}</h3>
+        <span class="h-feature__info">{{info}}</span>
+      </div>
+    </div>
+  </div>
 </div>
 {{/each}}
 {{/ifequal}}
 
 
 {{#ifequal type 'li-feature'}}
-{{#each global.feature}}
-<div class="medium-4 cell">
-      <div class="li-feature">
-            <div class="li-feature__inner">
-                  <div class="li-feature__header">
-                        <div class="li-feature__iconbox">
-                              <span class="li-feature__icon {{icon}}"></span>
-                        </div>
-                        <h3 class="li-feature__title">{{title}}</h3>
-                  </div>
-                  <div class="li-feature__content">
-                        <span class="li-feature__info">{{info}}</span>
-                  </div>
-                  <div class="li-feature__footer">
-                        {{> knob type='knob'}}
-                  </div>
-            </div>
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-manufacture"></span>
+        </div>
       </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Производим</h3>
+        <span class="li-feature__info">Собственные мощности гарантируют одну из самых низких цен на рынке</span>
+      </div>
+    </div>
+  </div>
 </div>
-{{/each}}
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-dilivery"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Доставляем</h3>
+        <span class="li-feature__info">Доставляем до места готовые для сборки конструкции с подробными инструкциями</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-project"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Проектируем</h3>
+        <span class="li-feature__info">Наши инженеры продумают все детали будущего здания, согласно потребностям клиента</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-save-time"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Быстро</h3>
+        <span class="li-feature__info">Изготовливаем до 50 тонн металлоконструкций за сутки без потери качества</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Контролируем</h3>
+        <span class="li-feature__info">Шэф-монтаж на всех стадиях работ по возведению здания, по желанию клиента</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="large-4 medium-6 small-12 cell">
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-key"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Строим</h3>
+        <span class="li-feature__info">Возводим собственные здания под ключ. От проекта до внутренней отделки</span>
+      </div>
+    </div>
+  </div>
+</div>
+{{/ifequal}}
+
+
+<!-- CURRENT -->
+
+{{#ifequal type 'li-feature--page'}}
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-logist"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Мы эксперты в строительстве складов и логистических центров</h3>
+        <span class="li-feature__info">Стальстрой проектирует и изготовлаивает металлоконструкции более 7 лет. Современные инженерные решения и материалы превосходного качества, позволяют нам создавать как склады под ключ, так и в форме строительных комплектов. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-russia"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Нам доверяют в 16 регионах России</h3>
+        <span class="li-feature__info">Компания «Стальстрой» изготовила и поставила более 800 зданий по всей территории ЦФО России. Всегда в срок и всегда в рамках бюджета. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Высокие стандарты качества</h3>
+        <span class="li-feature__info">Неважно, постоянный ли вы клиент или обращаетесь впервые, с вашим проектом будут работать только квалифицированные инженеры и мастера.</span>
+      </div>
+    </div>
+  </div>
+{{/ifequal}}
+
+{{#ifequal type 'li-feature--prom'}}
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-industry"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Мы эксперты в строительстве промышленных зданий</h3>
+        <span class="li-feature__info">Стальстрой проектирует и изготовлаивает металлоконструкции более 7 лет.
+           Современные инженерные решения и материалы превосходного качества, позволяют нам создавать как промышленныt здания под ключ, так и в форме строительных комплектов. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-russia"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Нам доверяют в 16 регионах России</h3>
+        <span class="li-feature__info">Компания «Стальстрой» изготовила и поставила более 800 зданий по всей территории ЦФО России. Всегда в срок и всегда в рамках бюджета. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Высокие стандарты качества</h3>
+        <span class="li-feature__info">Неважно, постоянный ли вы клиент или обращаетесь впервые, с вашим проектом будут работать только квалифицированные инженеры и мастера.</span>
+      </div>
+    </div>
+  </div>
+{{/ifequal}}
+
+{{#ifequal type 'li-feature--commercial'}}
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-commercial"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Мы эксперты в строительстве торговых и административных зданий</h3>
+        <span class="li-feature__info">Стальстрой проектирует и изготовлаивает металлоконструкции более 7 лет.
+           Современные инженерные решения и материалы превосходного качества, позволяют нам создавать как промышленныt здания под ключ, так и в форме строительных комплектов. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-russia"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Нам доверяют в 16 регионах России</h3>
+        <span class="li-feature__info">Компания «Стальстрой» изготовила и поставила более 800 зданий по всей территории ЦФО России. Всегда в срок и всегда в рамках бюджета. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Высокие стандарты качества</h3>
+        <span class="li-feature__info">Неважно, постоянный ли вы клиент или обращаетесь впервые, с вашим проектом будут работать только квалифицированные инженеры и мастера.</span>
+      </div>
+    </div>
+  </div>
+{{/ifequal}}
+
+{{#ifequal type 'li-feature--med'}}
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-sport"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Мы эксперты в строительстве спорткомплексов, медцентров и баз отдыха</h3>
+        <span class="li-feature__info">Стальстрой проектирует и изготовлаивает металлоконструкции более 7 лет.
+           Современные инженерные решения и материалы превосходного качества, позволяют нам создавать как промышленныt здания под ключ, так и в форме строительных комплектов. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-russia"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Нам доверяют в 16 регионах России</h3>
+        <span class="li-feature__info">Компания «Стальстрой» изготовила и поставила более 800 зданий по всей территории ЦФО России. Всегда в срок и всегда в рамках бюджета. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Высокие стандарты качества</h3>
+        <span class="li-feature__info">Неважно, постоянный ли вы клиент или обращаетесь впервые, с вашим проектом будут работать только квалифицированные инженеры и мастера.</span>
+      </div>
+    </div>
+  </div>
+{{/ifequal}}
+
+{{#ifequal type 'li-feature--sh'}}
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-springs"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Мы эксперты в строительстве сооружений для сельского хозяйства</h3>
+        <span class="li-feature__info">Стальстрой проектирует и изготовлаивает металлоконструкции более 7 лет.
+           Современные инженерные решения и материалы превосходного качества, позволяют нам создавать как промышленныt здания под ключ, так и в форме строительных комплектов. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-russia"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Нам доверяют в 16 регионах России</h3>
+        <span class="li-feature__info">Компания «Стальстрой» изготовила и поставила более 800 зданий по всей территории ЦФО России. Всегда в срок и всегда в рамках бюджета. </span>
+      </div>
+    </div>
+  </div>
+  <div class="li-feature">
+    <div class="li-feature__inner">
+      <div class="li-feature__header">
+        <div class="li-feature__iconbox">
+          <span class="li-feature__icon icon-control"></span>
+        </div>
+      </div>
+      <div class="li-feature__content">
+        <h3 class="li-feature__title">Высокие стандарты качества</h3>
+        <span class="li-feature__info">Неважно, постоянный ли вы клиент или обращаетесь впервые, с вашим проектом будут работать только квалифицированные инженеры и мастера.</span>
+      </div>
+    </div>
+  </div>
 {{/ifequal}}

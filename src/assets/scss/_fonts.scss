@@ -20,29 +20,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-karkasnik:before {
-  content: "\e912";
+
+
+.icon-russia:before {
+  content: "\e90e";
 }
-.icon-beskarkasnik:before {
-  content: "\e913";
+.icon-sport:before {
+  content: "\e90b";
+}
+.icon-commercial:before {
+  content: "\e90d";
+}
+.icon-logist:before {
+  content: "\e923";
+}
+.icon-industry:before {
+  content: "\e924";
+}
+.icon-springs:before {
+  content: "\e925";
 }
 .icon-samovivoz:before {
   content: "\e911";
 }
-.icon-karkas:before {
-  content: "\e90d";
-}
-.icon-roof:before {
-  content: "\e90e";
-}
 .icon-fundament:before {
   content: "\e90f";
-}
-.icon-ductair:before {
-  content: "\e910";
-}
-.icon-icon-rub:before {
-  content: "\e90b";
 }
 .icon-box2:before {
   content: "\e9b3";
@@ -242,47 +244,8 @@
 .icon-save-time:before {
   content: "\e9b2";
 }
-.icon-chat:before {
-  content: "\e900";
-}
-.icon-chat-alt-stroke:before {
-  content: "\e901";
-}
-.icon-chat-alt-fill:before {
-  content: "\e902";
-}
-.icon-comment-alt1-stroke:before {
-  content: "\e903";
-}
-.icon-comment:before {
-  content: "\e904";
-}
-.icon-comment-stroke:before {
-  content: "\e905";
-}
-.icon-comment-fill:before {
-  content: "\e906";
-}
-.icon-comment-alt2-stroke:before {
-  content: "\e907";
-}
-.icon-comment-alt2-fill:before {
-  content: "\e908";
-}
-.icon-checkmark2:before {
-  content: "\e909";
-}
-.icon-check-alt:before {
-  content: "\e90a";
-}
 .icon-x:before {
   content: "\e90c";
-}
-.icon-document-alt-stroke:before {
-  content: "\e91c";
-}
-.icon-curved-arrow:before {
-  content: "\e938";
 }
 .icon-iphone:before {
   content: "\e965";
@@ -295,6 +258,9 @@
 }
 .icon-phone:before {
   content: "\e942";
+}
+.icon-bubbles2:before {
+  content: "\e96c";
 }
 .icon-search2:before {
   content: "\e986";

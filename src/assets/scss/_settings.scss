@@ -69,8 +69,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1300);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #0069f0,
-  secondary: #e43c3c,
+  primary: #174b7a,
+  secondary: #bd3140,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -78,12 +78,12 @@ $foundation-palette: (
 $light-gray: #f0f2f4;
 $medium-gray: #dedede;
 $dark-gray: #4d4d4d;
-$black: #191e1e;
+$black: #222222;
 $white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
 // $body-font-family: 'Raleway', 'Helvetica Neue', Helvetica , Arial, sans-serif;
-$body-font-family: 'Fira Sans', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+$body-font-family: 'Montserrat', 'Helvetica Neue', Helvetica , Arial, sans-serif;
 // $body-font-family: 'Lato', 'Helvetica Neue', Helvetica , Arial, sans-serif;
 // $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica , Arial, sans-serif;
 // $body-font-family: 'Rubik', 'Helvetica Neue', Helvetica , Arial, sans-serif;
@@ -155,7 +155,7 @@ $header-styles: (
   medium: (
     'h1': ('font-size': 48),
     'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
+    'h3': ('font-size': 19),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
@@ -246,7 +246,7 @@ $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
 $accordionmenu-arrows: true;
-$accordionmenu-arrow-color: $black;
+$accordionmenu-arrow-color: $white;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;
 $accordionmenu-submenu-toggle-background: null;
@@ -401,8 +401,8 @@ $dropdownmenu-submenu-background: $dropdownmenu-background;
 $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
-$dropdownmenu-border: 1px solid $medium-gray;
-$dropdown-menu-item-color-active: $black;
+$dropdownmenu-border: null;
+$dropdown-menu-item-color-active: $white;
 $dropdown-menu-item-background-active: transparent;
 
 // 19. Flexbox Utilities
@@ -500,7 +500,7 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 300px,
+  small: 350px,
 );
 $offcanvas-vertical-sizes: (
   small: 250px,

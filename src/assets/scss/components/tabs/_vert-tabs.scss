@@ -1,0 +1,96 @@
+.vert-tabs {
+  background: $white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &__content {
+    background: $white;
+    padding: 1em;
+  }
+
+  &__img {
+    margin-bottom: 1em;
+  }
+
+  &__item {
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid $light-gray;
+
+    &:hover .vert-tabs__link {
+      color: $white;
+      transition: all .3s;
+    }
+    &:hover .vert-tabs__icon {
+      color: $white;
+      transition: all .3s;
+    }
+
+    &:hover {
+      background: $primary-color;
+      transition: all .3s;
+    }
+  }
+
+  &__item.is-active {
+    background: $primary-color;
+    transition: all .3s;
+
+    .vert-tabs__link {
+      color: $white;
+    }
+
+    .vert-tabs__icon {
+      color: $white;
+    }
+
+  }
+
+  &__link {
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1em;
+
+    &:hover, &:active, &:focus {
+      color: $black;
+    }
+  }
+
+  &__icon {
+    font-size: 3em;
+    color: $primary-color;
+  }
+
+}
+
+// move
+
+
+.primary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    line-height: $global-lineheight * 1.4;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      font-family: 'icomoon';
+      content: "\e9e6";
+      transform: rotate(180deg);
+      color: $primary-color;
+      padding-left: 0.5em;
+    }
+  }
+
+  &__icon {
+
+  }
+
+}

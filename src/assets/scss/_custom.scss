@@ -23,6 +23,7 @@
 @import 'components/gallery/gallery';
 @import 'components/gallery/showcase';
 @import 'components/gallery/h-showcase';
+@import 'components/gallery/slick-gallery';
 //
 @import 'components/forms/form';
 @import 'components/forms/single-input';
@@ -64,12 +65,14 @@
 // // TOPHEADERS
 @import 'components/topheaders/topheader';
 @import 'components/topheaders/h-topheader';
+@import 'components/topheaders/li-topheader';
 //
 //
 @import 'components/tabs/slicktabs';
 @import 'components/tabs/h-tabs';
 @import 'components/tabs/li-tabs';
 @import 'components/tabs/na-tabs';
+@import 'components/tabs/vert-tabs';
 //
 // // MODALS
 @import 'components/modals/modal';
@@ -108,3 +111,7 @@
 // footers
 @import 'components/footers/footer';
 @import 'components/footers/h-footer';
+@import 'components/footers/li-footer';
+
+// CURRENT
+@import 'components/geo';

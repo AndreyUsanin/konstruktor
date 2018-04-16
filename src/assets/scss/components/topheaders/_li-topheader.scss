@@ -1,0 +1,49 @@
+$li-topheader-height: 60px;
+
+
+.li-topheader {
+  padding: 0 1em;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  min-height: $li-topheader-height;
+  background: $white;
+
+
+  &--right {
+    justify-content: flex-end;
+
+      @include breakpoint (medium down) {
+        justify-content: center;
+      }
+  }
+
+  &__item {
+    display: flex;
+    margin-left: 1em;
+    border-right: 1px solid $light-gray;
+
+    &--big {
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+  }
+
+
+  &__link {
+    color: $black;
+
+    &:hover, &:active, &:focus {
+      color: $black;
+    }
+  }
+
+  &__iconbox {
+    margin-right: 0.5em;
+  }
+
+  &__icon {
+    color: $primary-color;
+  }
+}
