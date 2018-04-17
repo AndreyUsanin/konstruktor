@@ -3,10 +3,13 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  min-height: 480px;
+
 
   &__content {
     background: $white;
-    padding: 1em;
+    padding: 2em;
+    min-height: 480px;
   }
 
   &__img {
@@ -60,9 +63,19 @@
     }
   }
 
+  &__arrow {
+
+  }
+
   &__icon {
     font-size: 3em;
     color: $primary-color;
+  }
+
+  &__text {
+    overflow: hidden;
+    height: 106px;
+    text-overflow: ellipsis;
   }
 
 }

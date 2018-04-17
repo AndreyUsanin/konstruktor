@@ -207,6 +207,17 @@ if ($(".vert-tabs")[0]){
 	var elem = new Foundation.Tabs($(target), options);
 }
 
+// VERT-TABS
+
+if ($(".hor-tabs")[0]){
+	var target = document.getElementById("hor-tabs");
+	var options = {
+	  "linkClass": "hor-tabs__item"
+	};
+
+	var elem = new Foundation.Tabs($(target), options);
+}
+
 
 
 // SLICK-SLIDER

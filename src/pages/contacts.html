@@ -1,0 +1,79 @@
+<div class="" data-sticky-container>
+  <div class="sticky" data-sticky data-margin-top="0">
+    {{> li-topheader}}
+  </div>
+</div>
+{{> dnav-oc}}
+
+<section class="section contact-section">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="medium-6 cell">
+          <div class="title__box title__box--left">
+            <h2 class="title">Контакты:</h2>
+          </div>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <span class="contact-list__type">Телефон:</span>
+              <span class="contact-list__icon icon-iphone"></span>
+              8 800 2500 000
+            </li>
+            <li class="contact-list__item">
+              <span class="contact-list__type">Email:</span>
+              <span class="contact-list__icon icon-envelope"></span>
+              stalstroi@gmail.com
+            </li>
+            <li class="contact-list__item">
+              <span class="contact-list__type">Офис:</span>
+              <span class="contact-list__icon icon-map-marker"></span>
+              Москва, ул. Ленина, оф. 312
+            </li>
+            <li class="contact-list__item">
+              <span class="contact-list__type">Режим работы:</span>
+              <span class="contact-list__icon icon-clock2"></span>
+              Пн — Пт: 9.00 - 18.00
+            </li>
+          </ul>
+        </div>
+        <div class="medium-6 cell">
+          <div class="title__box title__box--left">
+            <h2 class="title">Задать вопрос:</h2>
+          </div>
+            <div class="quote-form">
+            <form class="quote-form__form" action="">
+              <div class="grid-x grid-margin-x">
+                <div class="medium-12 cell">
+                  <label>Как к вам обращаться:
+                    <input type="text" placeholder="Имя">
+                  </label>
+                </div>
+                <div class="medium-12 cell">
+                  <label>Телефон:
+                    <input type="text" placeholder="Телефон">
+                  </label>
+                </div>
+                <div class="medium-12 cell">
+                  <label>Ваш вопрос:
+                    <textarea name="question" rows="2" cols="80" placeholder="Ваш вопрос"></textarea>
+                  </label>
+                </div>
+                  <div class="medium-12 cell">
+                  <a class="knob knob--red" href="#">Отправить</a>
+                </div>
+                <div class="medium-12 cell">
+                  <small class="small">Нажимая кнопку, я даю свое согласие на обработку моих персональных данных, в соответствии с №152-ФЗ «О персональных данных» от 27.07.2006 года, на условиях и для целей, определенных в Согласии на обработку персональных данных.</small>
+                </div>
+              </div>
+            </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-area">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A21cdf88b09a074e2c060baf01787d29553b2590dae5e520165586f9378bf698e&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+</section>
+
+{{> li-footer}}

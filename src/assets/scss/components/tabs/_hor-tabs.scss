@@ -1,0 +1,75 @@
+.hor-tabs {
+  background: $white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+
+
+  &__content {
+    background: $white;padding-top: 2em;
+  }
+
+  &__img {
+    margin-bottom: 1em;
+  }
+
+  &__item {
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid $light-gray;
+
+    &:hover .hor-tabs__link {
+      color: $white;
+      transition: all .3s;
+    }
+    &:hover .hor-tabs__icon {
+      color: $white;
+      transition: all .3s;
+    }
+
+    &:hover {
+      background: $primary-color;
+      transition: all .3s;
+    }
+  }
+
+  &__item.is-active {
+    background: $primary-color;
+    transition: all .3s;
+
+    .hor-tabs__link {
+      color: $white;
+    }
+
+    .hor-tabs__icon {
+      color: $white;
+    }
+
+  }
+
+  &__link {
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1em;
+
+    &:hover, &:active, &:focus {
+      color: $black;
+    }
+  }
+
+  &__icon {
+    font-size: 3em;
+    color: $primary-color;
+  }
+
+  &__text {
+    overflow: hidden;
+    height: 106px;
+    text-overflow: ellipsis;
+  }
+
+}

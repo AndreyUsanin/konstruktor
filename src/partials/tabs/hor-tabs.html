@@ -1,0 +1,49 @@
+<section>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="medium-12 cell">
+        <ul class="hor-tabs" data-tabs id="hor-tabs">
+          <li class="hor-tabs__item is-active">
+            <span class="hor-tabs__icon icon-logist"></span>
+            <a href="#na-panel1" class="hor-tabs__link" aria-selected="true">Склад и логистика</a>
+          </li>
+          <li class="hor-tabs__item">
+            <span class="hor-tabs__icon icon-industry"></span>
+            <a href="#na-panel2" class="hor-tabs__link">Производство</a>
+          </li>
+          <li class="hor-tabs__item"  class="hor-tabs__link">
+            <span class="hor-tabs__icon icon-commercial"></span>
+            <a href="#na-panel3" class="hor-tabs__link">Торговля и коммерция</a>
+          </li>
+          <li class="hor-tabs__item"  class="hor-tabs__link">
+            <span class="hor-tabs__icon icon-sport"></span>
+            <a href="#na-panel4" class="hor-tabs__link">Медицина, спорт и отдых</a>
+          </li>
+          <li class="hor-tabs__item"  class="hor-tabs__link">
+            <span class="hor-tabs__icon icon-springs"></span>
+            <a href="#na-panel5" class="hor-tabs__link">Сельское хозяйство</a>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-12 cell">
+        <div class="hor-tabs__content" data-tabs-content="hor-tabs">
+          <div class="tabs-panel is-active" id="na-panel1">
+            {{> sklad-objects}}
+          </div>
+          <div class="tabs-panel" id="na-panel2">
+            {{> prom-objects}}
+          </div>
+          <div class="tabs-panel" id="na-panel3">
+            {{> com-objects}}
+          </div>
+          <div class="tabs-panel" id="na-panel4">
+            {{> med-objects}}
+          </div>
+          <div class="tabs-panel" id="na-panel5">
+              {{> sh-objects}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
