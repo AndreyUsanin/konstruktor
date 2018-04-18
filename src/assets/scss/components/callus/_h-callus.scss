@@ -24,5 +24,12 @@
 
   &__title {
     font-weight: bold;
+
+    &--hide {
+
+          @include breakpoint (medium down) {
+            display: none;
+          }
+    }
   }
 }

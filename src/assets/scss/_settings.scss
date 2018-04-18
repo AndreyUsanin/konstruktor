@@ -245,7 +245,7 @@ $accordion-content-padding: 1rem;
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
-$accordionmenu-arrows: true;
+$accordionmenu-arrows: false;
 $accordionmenu-arrow-color: $white;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;
@@ -402,8 +402,8 @@ $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: null;
-$dropdown-menu-item-color-active: $white;
-$dropdown-menu-item-background-active: transparent;
+$dropdown-menu-item-color-active: $black;
+$dropdown-menu-item-background-active: $white;
 
 // 19. Flexbox Utilities
 // ---------------------

@@ -1,0 +1,76 @@
+
+.ct  {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &--page {
+    font-size: 3.2em;
+    letter-spacing: -1px;
+
+    @include breakpoint (medium down) {
+      font-size: 2em;
+    }
+  }
+
+  &__box {
+    position: relative;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    &--page {
+      margin: 4em 0 2em 0;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      top: 2em;
+      width: 270px;
+      border-bottom: 2px solid $light-gray;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      width: 70px;
+      border-bottom: 5px solid $secondary-color;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+
+    &--left {
+
+      &::before {
+        left: 0;
+        transform: translateX(0%)
+      }
+
+      &::after {
+        left: 0;
+        transform: translateX(0%)
+      }
+
+    }
+
+  }
+
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+
+  &__accent {
+    font-weight: bold;
+  }
+}

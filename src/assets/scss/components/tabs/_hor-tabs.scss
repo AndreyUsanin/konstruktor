@@ -5,6 +5,10 @@
   list-style: none;
   display: flex;
 
+  @include breakpoint(medium down) {
+    flex-direction: column;
+  }
+
 
   &__content {
     background: $white;padding-top: 2em;
@@ -34,6 +38,8 @@
       background: $primary-color;
       transition: all .3s;
     }
+
+
   }
 
   &__item.is-active {

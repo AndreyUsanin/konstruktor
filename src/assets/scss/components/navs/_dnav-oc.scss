@@ -10,11 +10,10 @@ $dnav-oc-height: 80px;
   flex-wrap: wrap;
 
 
-  @include breakpoint(medium down) {
-    flex-direction: column;
-    width: 100%;
-  }
-
+    @include breakpoint(medium down) {
+      flex-direction: column;
+      width: 100%;
+    }
 
   &__header {
     padding: 0 2em;
@@ -38,6 +37,7 @@ $dnav-oc-height: 80px;
       height: auto;
       justify-content: flex-start;
     }
+
   }
 
   &__knobs {
@@ -60,16 +60,21 @@ $dnav-oc-height: 80px;
   }
 
     &:hover {
-
+      background: $white;
     }
 
+  }
+
+
+  &__parent-icon {
+    margin-right: .5em;
   }
 
   &__subitem {
     display: flex;
 
     &:hover {
-
+      background: $primary-color;
     }
   }
 
@@ -82,10 +87,8 @@ $dnav-oc-height: 80px;
     height: 100%;
     text-align: center;
 
-    font-size: 0.9em;
-
     &:hover, &:active, &:focus  {
-      color: $white;
+      color: $black;
     }
 
     .accordion-menu &__link {
@@ -106,7 +109,7 @@ $dnav-oc-height: 80px;
 
 
     &:hover, &:active, &:focus  {
-      color: $black;
+      color: $white;
     }
   }
 }
@@ -205,13 +208,44 @@ $dnav-oc-height: 80px;
     align-self: flex-end;
   }
 
+  &__list-link {
+    color: $white;
+
+    &:hover, &:active, &:focus  {
+      color: $white;
+    }
+  }
+
   &__list-item {
     padding: 1em;
-    color: $medium-gray;
+    color: $white;
   }
 
   &__icon {
     color: $white;
     margin-right: 1em;
   }
+}
+
+
+// костылики
+
+.is-accordion-submenu-parent .dnav-oc__link {
+  color: $white;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.dnav-oc__item[aria-expanded="true"] {
+  background-color: $primary-color;
+
+}
+
+.dnav-oc__item[aria-expanded="true"] .dnav-oc__link {
+  &:hover {
+    color: $white;
+  }
+
 }

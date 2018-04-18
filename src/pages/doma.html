@@ -1,0 +1,44 @@
+<div class="" data-sticky-container>
+  <div class="sticky" data-sticky data-margin-top="0">
+    {{> li-topheader}}
+  </div>
+</div>
+{{> dnav-oc}}
+
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="medium-12 cell">
+      <div class="title__box title__box--page">
+        <h2 class="title title--page ct">Котеджи, многоквартирные дома</h2>
+      </div>
+      <h2 class="subtitle ct"><span class="subtitle__accent">8</span> домов и котеджей. в <span class="subtitle__accent">4</span> регионах.</h2>
+      <p>Компания «Стальстрой» строит многоквартирные дома и загородные котеджи на основе металлического каркаса, технология позволяет разнообразить
+         как внутреннюю планировку, так и отделочные материалы по желанию заказчика.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="section">
+  <div class="grid-container">
+    {{> slick-gallery type='doma'}}
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="large-6 medium-12 cell">
+        {{> quote-form}}
+      </div>
+      <div class="large-6 medium-12 cell">
+          {{> feature type='li-feature--doma'}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> h-callus}}
+{{> li-footer}}
