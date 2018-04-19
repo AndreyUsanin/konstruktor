@@ -607,6 +607,11 @@ var dnav = new Foundation.ResponsiveMenu($('#dnav'), {
 
 
 
+//PRELOADER
 
+var overlay = document.querySelector('#overlay');
+window.addEventListener('load', function(){
+	overlay.style.display = 'none';
+})
 
 $(document).foundation();

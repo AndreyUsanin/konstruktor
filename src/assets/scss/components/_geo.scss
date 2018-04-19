@@ -3,45 +3,44 @@
 
 
 .geo-area {
-    background: url('../img/map.png') center center no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
+  background: url('../img/map.png') center center no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
 }
 
 
 
 .geo__list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
 }
 
 .geo__item {
-      padding: 1em;
-      text-transform: uppercase;
-      border-bottom: 1px solid $medium-gray;
-      font-size: 0.8em;
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .geo__icon {
-      margin-right: 1em;
-      color: $secondary-color;
+  margin-right: 1em;
+  color: $secondary-color;
 }
 
 
 // map
 .geo__map {
-      display: flex;
-      align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 
 .geo__info {
-      padding: 3em 0 3em;
+  // padding: 3em 0 3em;
 }
 
 .geo__desc {
-      margin: 2em 0;
+  margin: 2em 0;
 }

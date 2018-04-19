@@ -13,9 +13,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   </head>
   <body>
+    <div id="overlay">
+      <div class="spinner"></div>
+      <img class="spinner__img" src="assets/img/loader-logo.png" alt="">
+    </div>
+        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+        {{> body}}
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
     <script src="{{root}}assets/js/app.js"></script>
 
   </body>

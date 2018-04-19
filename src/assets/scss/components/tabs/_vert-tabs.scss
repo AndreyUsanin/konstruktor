@@ -78,32 +78,8 @@
     text-overflow: ellipsis;
   }
 
-}
-
-// move
-
-
-.primary-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  &__item {
-    line-height: $global-lineheight * 1.4;
-    display: flex;
-    align-items: center;
-
-    &::before {
-      font-family: 'icomoon';
-      content: "\e9e6";
-      transform: rotate(180deg);
-      color: $primary-color;
-      padding-left: 0.5em;
-    }
-  }
-
-  &__icon {
-
+  &__btns {
+    @include button-group(knob, 0);
   }
 
 }

@@ -31,8 +31,40 @@
     padding: 1.5em 3em;
   }
 
+  &--blue {
+    @include button(false,  $primary-color, $secondary-color);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.5em 3em;
+  }
+
   &--tabs {
-    margin-right: 1em;
+    font-weight: bold;
+
+  }
+
+  &--left {
+    @include button(false,  $secondary-color, $primary-color);
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1.5em 2em;
+  }
+
+  &--right {
+    @include button(false,  $light-gray, $primary-color);
+    border: 1px solid $medium-gray;
+    border-left: 0;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1.5em 2em;
+    color: $black;
+
+    &:hover {
+      border: transparent;
+    }
   }
 
   &__inner {
