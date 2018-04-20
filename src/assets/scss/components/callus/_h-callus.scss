@@ -8,6 +8,10 @@
   display: flex;
   justify-content: center;
 
+  @include breakpoint (small down) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   &__iconbox {
     display: flex;
@@ -16,6 +20,14 @@
     border-right: 2px solid $white;
     padding: 2em;
     margin-right: 2em;
+
+
+      @include breakpoint (small down) {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+      }
   }
 
   &__icon {
@@ -24,5 +36,12 @@
 
   &__title {
     font-weight: bold;
+
+    &--hide {
+
+          @include breakpoint (medium down) {
+            display: none;
+          }
+    }
   }
 }

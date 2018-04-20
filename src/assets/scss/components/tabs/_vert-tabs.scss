@@ -1,0 +1,85 @@
+.vert-tabs {
+  background: $white;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  // min-height: 370px;
+
+
+  &__content {
+    background: $white;
+    padding: 0;
+    // min-height: 370px;
+  }
+
+  &__img {
+    margin-bottom: 1em;
+  }
+
+  &__item {
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px solid $light-gray;
+
+    &:hover .vert-tabs__link {
+      color: $white;
+      transition: all .3s;
+    }
+    &:hover .vert-tabs__icon {
+      color: $white;
+      transition: all .3s;
+    }
+
+    &:hover {
+      background: $black;
+      transition: all .3s;
+    }
+  }
+
+  &__item.is-active {
+    background: $black;
+    transition: all .3s;
+
+    .vert-tabs__link {
+      color: $white;
+    }
+
+    .vert-tabs__icon {
+      color: $white;
+    }
+
+  }
+
+  &__link {
+    color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1em;
+
+    &:hover, &:active, &:focus {
+      color: $black;
+    }
+  }
+
+  &__arrow {
+
+  }
+
+  &__icon {
+    font-size: 1.5em;
+    color: $black;
+  }
+
+  &__text {
+    overflow: hidden;
+    height: 106px;
+    text-overflow: ellipsis;
+  }
+
+  &__btns {
+    @include button-group(knob, 0);
+  }
+
+}

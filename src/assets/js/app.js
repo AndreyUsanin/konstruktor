@@ -157,6 +157,18 @@ particlesJS("particles-js", {
 
 // TABS
 
+
+// VERT-TABS
+
+if ($(".vert-tabs")[0]){
+	var target = document.getElementById("vert-tabs");
+	var options = {
+	  "linkClass": "vert-tabs__item"
+	};
+
+	var elem = new Foundation.Tabs($(target), options);
+}
+
 // H-TABS
 
 
